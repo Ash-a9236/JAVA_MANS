@@ -1,0 +1,28 @@
+
+[#8C8C07]:text
+[#C9A176]:highlight
+[#2C6485]:notes
+
+<span style="color:#8C8CF7">
+
+# <span style="color:#C9A176">DESKTOP APPLICATIONS IN C# 00
+## <span style="color:#C9A176">INTRODUCTION TO C# PROGRAMMING
+
+<br>
+
+<!--TABLE OF CONTENTS : to finish
+<a href="#ArticleSection3"></a>
+
+OBJECTS
+* Instance Variables
+* Properties-->
+
+________
+### <span style="color:#C9A176">01.00 OBJECTS
+________________
+
+<br>
+
+> <span style="color:#2C6485"> For more information, see <a href="01_OBJECTS.md"><span style="color:#2C6485">**01_OBJECTS.md**</a>
+
+*A good programming practice is to use objects to **hide** how the program works. This process is called <span style="color:C9A176">encapsulation</span>*
