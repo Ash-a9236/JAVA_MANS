@@ -117,6 +117,15 @@ Hello World !
 <br>
 
 ________
+### <a id="codingTypes"><span style="color:#C9A176">04.00 TYPES OF CODING & QUIRKS</a>
+________________
+
+<br>
+
+
+<br>
+
+________
 ### <a id="numSystems"><span style="color:#C9A176">04.00 NUMBER SYSTEMS</a>
 ________________
 
@@ -298,7 +307,7 @@ public class Main {
 <br>
 
 In programming, you will see a lot of 'NULL' and NULL handling. 
-The null is a pointer in the memory which is the holder value for 'nothing'. It does not hold a value and rather carries the pointer towards a specific memory address.
+The null is a pointer in the memory which is the holder value for 'nothing'. It does not hold a value and rather carries the pointer towards a specific memory address which the compiler knows as null.
 Be careful : 
 <br> &emsp; - NULL can only be assigned to reference-type data types, or non-primitive data types
 <br> &emsp; - NULL doesn't mean 'empty' or 'zero' (String = null; is not equal to String = "";)
