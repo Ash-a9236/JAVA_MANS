@@ -69,6 +69,7 @@ Some popular IDEs include :
 <br> &emsp; - Visual Studio Code
 <br> &emsp; - Visual Studio 22
 <br> &emsp; - IntelliJ IDEA
+<br> &emsp; - PyCharm
 <br> &emsp; - Eclipse
 
 
@@ -196,6 +197,20 @@ ________
 ________________
 
 <br>
+
+After all of this information, we should start coding a bit! 
+Throughout this manual, I will use IntelliJ IDEA Community Edition IDE but feel free to use which ever you prefer. The shortcuts might not be the same but the idea will always be the same.
+
+For the syntax and everything as the code, we will have those general rules :
+<br> * All curly brackets will be on the same line
+<br> * We will use the camel case naming system (thisIsAVariable)
+<br> * IntelliJ IDEA
+<br> * Maven will be our build
+<br> * JUnit for testing
+<br> * JavaFX for any UI
+<br> * SDK 21
+<br> * GitHub & Git for version control
+
 <br>
 
 ________
@@ -203,6 +218,57 @@ ________
 ________________
 
 <br>
+
+variables can be different <span style="color:C9A176">data types</span>, which we define, to tell the computer what 'stuff' something is. Some languages (like JavaScript, Python, Ruby, ect.) do not necessitate explicit data type definition. They are called <span style="color:C9A176">dynamically typed</span> (or untyped) languages. Java is **not** one of those languages. You will need to specify everything from start to finish. For example, if we want to define a simple integer (number), like 4, the compilier doesn't know what '4' is, therefore, we add <span style="color:C9A176">int</span> in front of it, thus defining 4 for the computer
+
+
+<br>
+
+#### <a id="primitive"><span style="color:#C9A176">02.01 PRIMITIVE</a>
+---------------------
+<br>
+
+primitive data types are data that is <span style="color:C9A176">directly referenced</span> in the memory of the computer as a series of bytes (0 and 1) they can hold a maximum value defined by the number of bytes they are defined to occupy in the computer memory
+
+| NAME | SYMBOL | SIZE | MIN VALUE | MAX VALUE | 
+|------|--------|------|-----------|-----------|
+| integer | <span style="color:C9A176">int</span> | 4 bytes | -2 147 483 648 | 2 147 483 647 |
+| double | <span style="color:C9A176">double</span> | 8 bytes | -1.79769313486232 e 308 | 1.79769313486232 e 308 |
+| float | <span style="color:C9A176">float</span> | 4 bytes | -3.402823 e 38 | 3.402823 e 38 |
+| boolean | <span style="color:C9A176">bool</span> | 1 byte | false | true |
+| character | <span style="color:C9A176">char</span> | 2 bytes |  | |
+
+<br>
+
+#### <a id="nonPrimitive"><span style="color:#C9A176">02.02 NON-PRIMITIVE</a>
+---------------------
+<br>
+
+in programming languages, non-primitive data types are data types which are actually <span style="color:C9A176">classes</span> non-primitive data types are <span style="color:C9A176">not directly referenced</span> in the memory but the computer rather holds the <span style="color:C9A176">memory address</span> of the class. 
+In Java the only non-primitive data type (for now) is the <span style="color:C9A176">String</span>. It is easier to see it in java as it is written with a capitalized s (String), therefore defining it as a class
+
+-> the string is a sequence of characters
+
+non-primitive data types also contain methods which can be used to modify them (for example : <span style="color:C9A176">.toUpperCase()</span> which capitalizes every letter of a given string)
+
+<br>
+
+```java
+public class Main {
+    public static void main (String[] args) {
+        String name = "John Doe";
+        printName(name); //calling the method
+    }
+
+    //method
+    public void printName (String name) { 
+        System.out.println(name); //will print the memory address, not the value
+
+        name.toString(); //will print the value of the string : John Doe
+    }  
+}
+```
+
 <br>
 
 ________
