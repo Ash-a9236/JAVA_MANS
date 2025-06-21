@@ -32,6 +32,11 @@ ________
 ________________
 
 <br>
+Coding is simply translating what you want to say in human-english to a computer-understandable language. It is putting abstact concepts like cats and bananas and making your computer make them do 'stuff', which is basically whatever you want. 
+Learning how to code is mostly learning concepts through a language that then further translate to pretty much every programming language.
+Of course, there are different types of programmings, but at the core, an int in Java will have the same definition in C++.
+
+Those coding sheets will be using and teaching Java, an Object Oriented Programming language.
 
 <br>
 
@@ -40,6 +45,19 @@ ________
 ________________
 
 <br>
+In programming, each language has its set of standards, especially for naming. 
+
+In Java (and most other OOP languages) the standards are : 
+<br> &emsp; - Variables are in camel case, therefore : the first word is never capitalized, all words are together, and every first letter of every word is capitalized (i.e. camelCase, num3, tryNum, fName, thisIsASentenceInCamelCase, etc.)
+<br> &emsp; - Non-primary data types and classes start with a capital letter (i.e. Cat, Array, String, Banana, etc.)
+<br> &emsp; - Constants and Enums are always named in all caps (i.e. TRYCOUNT, PI, NUMBER, E, etc.)
+<br> &emsp; - Method naming should be simple and straight to the point (i.e. nameFormatting instead of willFormatAStringToCapitalizeTheFirstLetterOfEveryWord)
+<br> &emsp; - Methods and classes should always think of the 'blackbox', AKA hide code from each other
+<br> &emsp; - Methods should never be more than 50 lines of code
+<br> &emsp; - When a piece of code is reused more than 3 times throughout your code, create a method and call it. **Avoid redundant code at all cost**
+<br> &emsp; - Avoid unecessary spaces in the code (i.e. extra lines)
+<br> &emsp; - Classes should always be organized (data fields, constructors, helper methods, equals and hashcode, getters and setters)
+
 <br>
 
 ________
@@ -221,6 +239,10 @@ ________________
 
 variables can be different <span style="color:C9A176">data types</span>, which we define, to tell the computer what 'stuff' something is. Some languages (like JavaScript, Python, Ruby, ect.) do not necessitate explicit data type definition. They are called <span style="color:C9A176">dynamically typed</span> (or untyped) languages. Java is **not** one of those languages. You will need to specify everything from start to finish. For example, if we want to define a simple integer (number), like 4, the compilier doesn't know what '4' is, therefore, we add <span style="color:C9A176">int</span> in front of it, thus defining 4 for the computer
 
+Java, like every programming language can do automatic conversions, which is when you force (cast) a type uppon a variable of another type. Conversions towards higher values can work while conversions towards lower values are not recommended since information will be lost or the system will crash. For example, you can convert an integer (4) to a double (4.0) without a problem. The compiler will simply add the decimal point. But, converting the double (4.5) to the integer (4), Java will not do a rounding. It will simply remove the decimal point. 
+
+> <span style="color:#2C6485"> For the type casting reference in Java see  <a href="https://storage.googleapis.com/www.examclouds.com/primitives/widening-conversions.png"><span style="color:#2C6485">**AUTOMATIC CONVERSION IN JAVA**</a>
+
 
 <br>
 
@@ -244,7 +266,7 @@ primitive data types are data that is <span style="color:C9A176">directly refere
 ---------------------
 <br>
 
-in programming languages, non-primitive data types are data types which are actually <span style="color:C9A176">classes</span> non-primitive data types are <span style="color:C9A176">not directly referenced</span> in the memory but the computer rather holds the <span style="color:C9A176">memory address</span> of the class. 
+In programming languages, non-primitive data types are data types which are actually <span style="color:C9A176">classes</span>. Non-primitive data types are <span style="color:C9A176">not directly referenced</span> in the memory, but the computer rather holds the <span style="color:C9A176">memory address</span> of the class. 
 In Java the only non-primitive data type (for now) is the <span style="color:C9A176">String</span>. It is easier to see it in java as it is written with a capitalized s (String), therefore defining it as a class
 
 -> the string is a sequence of characters
@@ -270,6 +292,18 @@ public class Main {
 ```
 
 <br>
+
+#### <a id="nullDataType"><span style="color:#C9A176">02.02 NULL</a>
+---------------------
+<br>
+
+In programming, you will see a lot of 'NULL' and NULL handling. 
+The null is a pointer in the memory which is the holder value for 'nothing'. It does not hold a value and rather carries the pointer towards a specific memory address.
+Be careful : 
+<br> &emsp; - NULL can only be assigned to reference-type data types, or non-primitive data types
+<br> &emsp; - NULL doesn't mean 'empty' or 'zero' (String = null; is not equal to String = "";)
+<br> &emsp; - Checking for null is always recommended to avoid the null pointer exceptions
+
 
 ________
 ### <a id="stuck"><span style="color:#C9A176">09.00 IM STUCK!</a>
