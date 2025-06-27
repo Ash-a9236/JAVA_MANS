@@ -25,7 +25,10 @@ TABLE OF CONTENTS <br> <br>
 [<span style="color: var(--link)">04 . . Types of coding and quirks</span>](#coding-types) <br>
     &emsp; [<span style="color: var(--link)">01 . . Types of coding</span>](#coding-types-types) <br>
     &emsp; [<span style="color: var(--link)">02 . . High and Low</span>](#coding-types-high-and-low) <br>
+    &emsp; [<span style="color: var(--link)">03 . . Quirks</span>](#coding-types-quirks) <br>
 [<span style="color: var(--link)">05 . . Number Systems</span>](#number-systems) <br> 
+    &emsp; [<span style="color: var(--link)">01 . . Computer Memory</span>](#number-systems-computer-memory) <br>
+    &emsp; [<span style="color: var(--link)">02 . . Binary</span>](#number-systems-binary) <br>
 [<span style="color: var(--link)">06 . . Us</span>](#us) <br> 
 [<span style="color: var(--link)">07 . . Data Types & NULL</span>](#data-types) <br>
   <!--
@@ -92,7 +95,7 @@ They usually contain :
 <br> &emsp; - Code snippets & navigation
 <br> &emsp; - Extensions and Plugins
 
-> <span style="color: var(--link)"> For more information see  <a href="https://www.geeksforgeeks.org/what-is-ide/"><span style="color: var(--link)">**WHAT IS AN IDE?**</a>
+> For more information see <a href="https://www.geeksforgeeks.org/what-is-ide/"><span style="color: var(--link)">**WHAT IS AN IDE?**</a></span>
 
 IDE are usually paying, but they also usually have a <span style="color: var(--highlight)">Communitiy Edition</span> which is free
 
@@ -221,7 +224,7 @@ ________________
 <br>
 
 You can also differenciate programming languages with how close they are to english vs how close they are to machine language.
-The closer to the machine the lower their level of abstraction is. Basically, the lower they are, the more you need to understand how the machine works, and the more you will need to declare everything for your computer. 
+The <span style="color: var(--highlight)">closer to the machine the lower their level of abstraction is</span>. Basically, the lower they are, the more you need to understand how the machine works, and the more you will need to declare everything for your computer. 
 The lowest programming language (apart from binary) is called Assembly. It was the first programming language and is one-to-one with binary, hence why it is so low.
 
 When we are talking about high level programming languages, we mean languages that are almost like written english. They might seem more intuitive but be mindful that they hide *a lot*, which we call 'abstraction'.
@@ -231,73 +234,77 @@ The furtest you go from the hardware, the more abstraction you add to your progr
 
 |            | HIGH | LOW  |
 |------------|------|------|
-| Fridenly to | Programmer | Machine|
-| Understandable | Easy | Not really |
-| Readability | Easy | Complex |
-| Debugging | Easy | Complex |
-| Maintenance | Easy | Complex |
-| Portable | Yes | No |
-| Runs on | Anything | Machine-dependent |
-| Translation to binary with | Compiler / Interpreter | Assembler |
-| Used | Widely | Not common |
-| Execution speed | Slow | Fast |
+| **Fridenly to** | Programmer | Machine|
+| **Understandable** | Easy | Not really |
+| **Readability** | Easy | Complex |
+| **Debugging** | Easy | Complex |
+| **Maintenance** | Easy | Complex |
+| **Portable** | Yes | No |
+| **Runs on** | Anything | Machine-dependent |
+| **Translation to binary with** | Compiler / Interpreter | Assembler |
+| **Used** | Widely | Not common |
+| **Execution speed** | Slow | Fast |
 
 
 A few languages by levels, lowest to highest :
 
 Machine language > Assembly > C > C++ > Rust > Go > Java > JavaScript > Ruby > Python
 
-* **Machine Code and Assembly** are still the lowest in terms of how close they are to the hardware.
-* **C and C++** are very close to hardware as well, with C++ adding more abstraction features like OOP.
-* **Rust** is a modern systems language that provides memory safety with low-level control.
-* **Go** is designed for simplicity and performance, with some higher-level abstractions.
-* **Java** runs on the JVM, offering portability and automatic memory management.
-* **JavaScript** is a higher-level scripting language primarily used for web development.
-* **Ruby** is even higher-level, known for its elegant syntax and simplicity.
-* **Python** is very high-level and emphasizes ease of use, often abstracting away many details of memory and processing.
+* <span style="color: var(--highlight)">Machine Code and Assembly</span> are still the lowest in terms of how close they are to the hardware. <br>
+* <span style="color: var(--highlight)">C and C++</span> are very close to hardware as well, with C++ adding more abstraction features like OOP. <br>
+* <span style="color: var(--highlight)">Rust</span> is a modern systems language that provides memory safety with low-level control. <br>
+* <span style="color: var(--highlight)">Go</span> is designed for simplicity and performance, with some higher-level abstractions. <br>
+* <span style="color: var(--highlight)">Java</span> runs on the JVM, offering portability and automatic memory management. <br>
+* <span style="color: var(--highlight)">JavaScript</span> is a higher-level scripting language primarily used for web development. <br>
+* <span style="color: var(--highlight)">Ruby</span> is even higher-level, known for its elegant syntax and simplicity. <br>
+* <span style="color: var(--highlight)">Python</span> is very high-level and emphasizes ease of use, often abstracting away many details of memory and processing. <br>
 
 *All from ChatGPT summary*
 
+<br>
+
 ________
-### <span style="color: var(--title)">04.03 QUIRKS
+### <a id="coding-types-quirks"><span style="color: var(--title)">04.03 QUIRKS</span></a>
 ________________
 
 <br>
 
 All programming languages have 'quirks' that you need to be aware of. In Java, you must note (principally) that 
 
-* It is **case sensitive** : hello and HELLO are not the same, int a = 2; and int A  = 2; are not the same
-* You need to **define the type of variable** : Java does not have an interpreter, therefore it cannot 'guess' or 'assume' the type of a variable
-* You need to **define the access modifiers** for the methods : public, private, protected, default
-* **Automatic garbage collection** : you do not need to worry about the discarded objects and variables
-* **NullPointerException** : is an exception that you will see a lot and will have to debug a lot. Java is not able to handle null pointers and therefore exits if the null is not manually handled
-* **Wrapper Classes** are different from their primitive data types. This leads to type conversion errors when you upcast or downcast.
-* **No multiple inheritance** : a child can only have one parent (which we can override by implementing multiple interfaces)
-* **No multiple return values** : each method can only return one type of value and one value only (we can override this by returning an object or an array)
+* It is <span style="color: var(--highlight)">case sensitive</span> : hello and HELLO are not the same, int a = 2; and int A  = 2; are not the same
+* You need to <span style="color: var(--highlight)">define the type of variable</span> : Java does not have an interpreter, therefore it cannot 'guess' or 'assume' the type of a variable
+* You need to <span style="color: var(--highlight)">define the access modifiers</span> for the methods : public, private, protected, default
+* <span style="color: var(--highlight)">Automatic garbage collection</span> : you do not need to worry about the discarded objects and variables
+* <span style="color: var(--highlight)">NullPointerException</span> : is an exception that you will see a lot and will have to debug a lot. Java is not able to handle null pointers and therefore exits if the null is not manually handled
+* <span style="color: var(--highlight)">Wrapper Classes</span> are different from their primitive data types. This leads to type conversion errors when you upcast or downcast.
+* <span style="color: var(--highlight)">No multiple inheritance</span> : a child can only have one parent (which we can override by implementing multiple interfaces)
+* <span style="color: var(--highlight)">No multiple return values</span> : each method can only return one type of value and one value only (we can override this by returning an object or an array)
 
 
 Other programming languages have their own quirks, like SQL that is case insensitive and differs between DBMS (Database Management System), or python that needs to have specific indentation. Once you learn them programming in that language becomes relatively easy, especially if you know the base concepts.
 
 
 
-<br>
+<br> <br>
 
 ________
-### <a id="numSystems"><span style="color: var(--title)">04.00 NUMBER SYSTEMS</a>
+### <a id="number-systems"><span style="color: var(--title)">04.00 NUMBER SYSTEMS</a></span>
 ________________
 
 <br>
 
-In programming (and other computer-related fields), you will come accross different number systems. While they are confusing at first, they do have a purpose : make it easier to read, write, and undestand binary code. 
+In programming (and other computer-related fields), you will come accross different <span style="color: var(--highlight)">number systems</span>. While they are confusing at first, they do have a purpose : make it easier to read, write, and undestand binary code. 
 They are basically shortcuts to make binary calculation, which makes it easier for a human to translate a random number, value, or even idea into something the computer can understand.
 
+<br>
+
 ________
-### <span style="color: var(--title)">04.01 COMPUTER MEMORY
+### <a id="number-systems-computer-memory"><span style="color: var(--title)">04.01 COMPUTER MEMORY</span></a>
 ________________
 
 <br>
 
-Your computer has two memories : the RAM (Rapid / Random Access Memory) and the SSD (Solid State Drive). The SSD is like a giant library that contains everything from your operating system (OS like Windows, Mac, Linux, Adroid, ect.) to your word documents or even this file. 
+Your computer has two memories : the <span style="color: var(--highlight)">RAM</span> (Rapid / Random Access Memory) and the <span style="color: var(--highlight)">SSD</span> (Solid State Drive). The SSD is like a giant library that contains everything from your operating system (OS like Windows, Mac, Linux, Adroid, ect.) to your word documents or even this file. 
 <br> The RAM is like a cart beside the librarian's desk where all the books you are using at the moments are stored. The RAM makes it easier and faster to access them.
 <br> When you are programming, you are only using the RAM. All the variables, objects and the program itself will run on the RAM.
 
@@ -305,7 +312,7 @@ For obvious reasons, your computer cannot speak 'human'. Since the beginning of 
 
 <br>
 
-#### <span style="color: var(--title)">04.02 BINARY
+#### <a id="number-systems-binary"><span style="color: var(--title)">04.02 BINARY</span></a>
 ---------------------
 <br>
 
@@ -339,18 +346,17 @@ a <span style="color: var(--highlight)">byte</span> is composed of <span style="
 
 <br>
 
-#### <span style="color: var(--title)">04.03 CHARACTERS & ASCII
+#### <a id="number-systems-characters-and-ascii"><span style="color: var(--title)">04.03 CHARACTERS & ASCII</span></a>
 ---------------------
 <br>
 
-> <span style="color: var(--link)"> For the ASCII reference sheet see  <a href="https://www.ascii-code.com/"><span style="color: var(--link)">**ASCII TABLE**</a>
+> For the ASCII reference sheet see <a href="https://www.ascii-code.com/"><span style="color: var(--link)">**ASCII**</a></span> <br>For the Unicode reference chart see <a href="https://www.unicode.org/charts/"><span style="color: var(--link)">**UNICODE**</a></span>
 
 
-characters such as letters and symbols are also represented in binary for computers.
-
+All characters such as letters and symbols are also represented in binary for computers like numbers. It is an international standard for computer science and all informatics related stuff. The ASCII table is the english subset of the unicode table, wich encodes every symbol and letter from all the world's languages. Unicode also references emijis and their behaviours
 to reference them, we use a reference sheet called the <span style="color: var(--highlight)">ASCII code</span>, which uses 8 bit for every character
 
-each letter has a reference number which *all programming languages understand* and can lead to programming errors when defining and setting data types and variables
+each letter has a reference number which *all programming languages understand* and can lead to programming errors when defining and setting data types and variables in Java
 
 (ex. char letter = 'a'; => char + 1; will return 'b' BUT int number = a; will return 96 since the ASCII for lower case a is 96)
 
