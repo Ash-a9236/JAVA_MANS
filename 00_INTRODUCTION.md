@@ -124,7 +124,7 @@ Console :
 ```
 Hello World !
 
-process exit 0
+Process finished with exit code 0
 ```
 
 <br>
@@ -184,7 +184,7 @@ methodC
 methodA
 methodB
 
-process exit 0
+Process finished with exit code 0
 ```
 
 <br><br>
@@ -209,7 +209,7 @@ hello
 this is line 1
 I cannot go back to line 1
 
-process exit 0
+Process finished with exit code 0
 ```
 
 <br> <br>
@@ -407,8 +407,10 @@ As a reference, you should always have those settings :
 
 ![image info](/Images/00_INTRODUCTION_00_createAProjectSettings.png)
 
-<!-- IF THE FIRST IMAGE DOESNT LOAD : UNCOMMENT THIS
-<img src="/Images/00_INTRODUCTION_00_createAProjectSettings.png" alt="creating a new project settings"/>-->
+<!-- 
+IF THE FIRST IMAGE DOESNT LOAD : UNCOMMENT THIS
+<img src="/Images/00_INTRODUCTION_00_createAProjectSettings.png" alt="creating a new project settings"/>
+-->
 
 The only thing you need to change is the GroupId : change it to your GitHub handle or any marking that will act as your copyright. IT will appear on any piece of code that you will write and therefore mark it as yours.
 
