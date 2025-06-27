@@ -390,7 +390,9 @@ For the syntax and everything as the code, we will have those general rules (you
 As a reference, you should always have those settings :
 
 ![image info](/Images/00_INTRODUCTION_00_createAProjectSettings.png)
-<img src="/Images/00_INTRODUCTION_00_createAProjectSettings.png" alt="creating a new project settings"/>
+
+<!-- IF THE FIRST IMAGE DOESNT LOAD : UNCOMMENT THIS
+<img src="/Images/00_INTRODUCTION_00_createAProjectSettings.png" alt="creating a new project settings"/>-->
 
 The only thing you need to change is the GroupId : change it to your GitHub handle or any marking that will act as your copyright. IT will appear on any piece of code that you will write and therefore mark it as yours.
 
