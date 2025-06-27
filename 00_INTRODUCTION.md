@@ -1,8 +1,12 @@
+<!--Copyright @ash-a9236 2025 : please see license for -->
+
 <!--VARIABLES-->
 
 [#F7E0CD]:text
 [#D69992]:highlight
 [#B15A43]:notes
+
+
 
 <span style="color:#F7E0CD">
 
@@ -11,14 +15,14 @@
 
 <br>
 TABLE OF CONTENTS <br>
-<br> 01 . . [<span style="color:#B15A43">Base Concepts](#baseConcepts)
+<br> 01 . . [<span style="color:#B15A43">Base Concepts</span>](#baseConcepts)
 <br> 02 . . [<span style="color:#B15A43">Some Standards</span>](#someStandards)
 <br> 03 . . [<span style="color:#B15A43">IDEs</span>](#ides)
 <br> 04 . . [<span style="color:#B15A43">Types of coding and quirks</span>](#codingTypes)
 <br> 05 . . [<span style="color:#B15A43"> Number Systems</span>](#numSystems)
 <br> 06 . . [<span style="color:#B9C3D6">Us</span>](#us)
 <br> 07 . . [<span style="color:#B9C3D6">Data Types & NULL</span>](#dataTypes)
-<br> 08 . . [<span style="color:#B9C3D6">Im stuck!](#stuck)
+<br> 08 . . [<span style="color:#B9C3D6">Im stuck!</span>](#stuck)
   <!--
 <br> &emsp; 01.01 . . [<span style="color:#B9C3D6">Some Standards](#someStandards)
 <br> &emsp; 01.02 . . [<span style="color:#B9C3D6">IDEs](#ides)
@@ -28,7 +32,7 @@ TABLE OF CONTENTS <br>
 <br>
 
 ________
-### <a id="baseConcepts"><span style="color:#D69992">01.00 BASE CONCEPTS</a>
+### <a name="baseConcepts"><span style="color:#D69992">01.00 BASE CONCEPTS</span></a>
 ________________
 
 <br>
@@ -482,4 +486,6 @@ ________________
 
 
 
+
+</span>
 
