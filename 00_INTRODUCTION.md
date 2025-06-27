@@ -400,7 +400,7 @@ After all of this information, we should start coding a bit!
 
 > please NEVER EVER EVER install anything if its not from an official source (the actual developpers) and without verifying the installation through the provided key. All installation instructions are in the documentation provided by the developper. FOLLOW THEM. <br> If you run into a problem, if your computer crashes, if you are unsure of the source, etc., trying to undo those installations is long and hard and sometimes near impossible without having to wipe the entirety of your computer. <br> Make sure you know what you are doing before doing. (trust me on this one. Trust the fact that you should trust no one except those who are legally bounded to give you this trust).
 
-<br> Throughout this manual, I will use <a href="https://www.jetbrains.com/idea/download/?source=post_page---------------------------&section=windows"><span style="color: var(--link)">**IntelliJ IDEA Community Edition**</a> IDE but feel free to use which ever you prefer. The shortcuts might not be the same but the idea will always be the same.
+<br> Throughout this manual, I will use <a href="https://www.jetbrains.com/idea/download/?source=post_page---------------------------&section=windows"><span style="color: var(--link)">**IntelliJ IDEA Community Edition**</a> IDE (you need to scroll down a bit for the community edition link) feel free to use which ever you prefer. The shortcuts might not be the same but the idea will always be the same.
 
 For the syntax and everything as the code, we will have those general rules (you can update them in the settings of your IDE) :
 * All curly brackets will be on the same line <br>
