@@ -1,5 +1,7 @@
 # JAVA_MANS
-A compilation of all the base programming concepts through the Java programming language
+
+This is a manual on how to program in Java, from the base concepts like datatypes and objects to more advanced like design patterns, streams, ect. 
+This is not an official manual, it comes from my understanding, experience, and research as a programmer and student myself.
 
 ## HOW TO
 
@@ -13,3 +15,32 @@ My defaults are :
     --title: #708C69;
     --highlight: #D69992;
     --link: #B15A43;
+
+To create a new branch of this reposatory on your computer :
+For git (bash) : run those commands line by line
+
+```console
+cd Documents
+git clone https://github.com/Ash-a9236/JAVA_MANS.git
+cd JAVA_MANS
+git checkout -b your-new-branch-name
+```
+
+I reccommend 'pulling' once in a while, in case I update the reposatory
+```console
+git pull origin main
+```
+
+
+## I NEED HELP
+
+If you ever need help with a part, the first step is to go search on the web for an answer.
+I reccomend :
+* <a href="https://stackoverflow.com/questions">Stack Overflow</a>
+* <a href="https://www.geeksforgeeks.org/">Geeks for Geeks</a>
+* <a href="https://www.w3schools.com/">W3 School</a>
+* <a href="https://www.codecademy.com/">CodeCademy</a>
+
+If none of these work and you are really stuck, you can always create an issue on this reposatory with the question and I will try to answer it directly.
+
+
