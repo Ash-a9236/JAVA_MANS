@@ -328,7 +328,7 @@ binary numbers can only count in 0s and 1s therefore :
 <br>1000 = 1 (first position $2^0$ is set to 1 => $2^0$ * 1 = 1)
 <br>0100 = 2 (position 1 ($2^0$) = 0 + position 2 ($2^1$) = 2 => 0 + 2 = 2)
 <br>1100 = 3 (position 1 ($2^0$) = 1 + position 2 ($2^1$) = 2 => 1 + 2 = 3)
-<br>0010 = 4 (position 1 ($2^0$) = 0 + position 2 ($2^1$) = 0 + position 3 ($2^2$) = 4 => 0 + 0 + 4 = 5)
+<br>0010 = 4 (position 1 ($2^0$) = 0 + position 2 ($2^1$) = 0 + position 3 ($2^2$) = 4 => 0 + 0 + 4 = 4)
 
 etc.
 
