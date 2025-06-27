@@ -41,6 +41,6 @@ I reccomend :
 * <a href="https://www.w3schools.com/">W3 School</a>
 * <a href="https://www.codecademy.com/">CodeCademy</a>
 
-If none of these work and you are really stuck, you can always create an issue on this reposatory with the question and I will try to answer it directly.
+If none of these work and you are really stuck, you can always create an issue on this repository with the question and I will try to answer it directly.
 
 
