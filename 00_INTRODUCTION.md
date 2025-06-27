@@ -29,8 +29,12 @@ TABLE OF CONTENTS <br> <br>
 [<span style="color: var(--link)">05 . . Number Systems</span>](#number-systems) <br> 
     &emsp; [<span style="color: var(--link)">01 . . Computer Memory</span>](#number-systems-computer-memory) <br>
     &emsp; [<span style="color: var(--link)">02 . . Binary</span>](#number-systems-binary) <br>
+    &emsp; [<span style="color: var(--link)">03 . . Other Systems</span>](#number-systems-other-systems) <br>
 [<span style="color: var(--link)">06 . . Us</span>](#us) <br> 
 [<span style="color: var(--link)">07 . . Data Types & NULL</span>](#data-types) <br>
+  &emsp; [<span style="color: var(--link)">01 . . Primitive</span>](#data-types-primitive) <br>
+  &emsp; [<span style="color: var(--link)">02 . . Non-Primitive</span>](#data-types-non-primitive) <br>
+  &emsp; [<span style="color: var(--link)">03 . . Null</span>](#data-types-null) <br>
   <!--
 <br> &emsp; 01.01 . . [<span style="color:#B9C3D6">Some Standards](#someStandards)
 <br> &emsp; 01.02 . . [<span style="color:#B9C3D6">IDEs](#ides)
@@ -288,7 +292,7 @@ Other programming languages have their own quirks, like SQL that is case insensi
 <br> <br>
 
 ________
-### <a id="number-systems"><span style="color: var(--title)">04.00 NUMBER SYSTEMS</a></span>
+### <a id="number-systems"><span style="color: var(--title)">05.00 NUMBER SYSTEMS</a></span>
 ________________
 
 <br>
@@ -299,7 +303,7 @@ They are basically shortcuts to make binary calculation, which makes it easier f
 <br>
 
 ________
-### <a id="number-systems-computer-memory"><span style="color: var(--title)">04.01 COMPUTER MEMORY</span></a>
+### <a id="number-systems-computer-memory"><span style="color: var(--title)">05.01 COMPUTER MEMORY</span></a>
 ________________
 
 <br>
@@ -312,7 +316,7 @@ For obvious reasons, your computer cannot speak 'human'. Since the beginning of 
 
 <br>
 
-#### <a id="number-systems-binary"><span style="color: var(--title)">04.02 BINARY</span></a>
+#### <a id="number-systems-binary"><span style="color: var(--title)">05.02 BINARY</span></a>
 ---------------------
 <br>
 
@@ -346,24 +350,23 @@ a <span style="color: var(--highlight)">byte</span> is composed of <span style="
 
 <br>
 
-#### <a id="number-systems-characters-and-ascii"><span style="color: var(--title)">04.03 CHARACTERS & ASCII</span></a>
+#### <a id="number-systems-characters-and-ascii"><span style="color: var(--title)">05.03 CHARACTERS & ASCII</span></a>
 ---------------------
 <br>
 
 > For the ASCII reference sheet see <a href="https://www.ascii-code.com/"><span style="color: var(--link)">**ASCII**</a></span> <br>For the Unicode reference chart see <a href="https://www.unicode.org/charts/"><span style="color: var(--link)">**UNICODE**</a></span>
 
 
-All characters such as letters and symbols are also represented in binary for computers like numbers. It is an international standard for computer science and all informatics related stuff. The ASCII table is the english subset of the unicode table, wich encodes every symbol and letter from all the world's languages. Unicode also references emijis and their behaviours
-to reference them, we use a reference sheet called the <span style="color: var(--highlight)">ASCII code</span>, which uses 8 bit for every character
+All characters such as letters and symbols are also represented in binary for computers like numbers. It is an international standard for computer science and all informatics related stuff. The ASCII table is the english subset of the unicode table, wich encodes every symbol and letter from all the world's languages. Unicode also references emojis and their behaviours (hence why a smily face on apple is also a smily face on android). <br>
 
-each letter has a reference number which *all programming languages understand* and can lead to programming errors when defining and setting data types and variables in Java
+To reference them, we use a reference sheet called the <span style="color: var(--highlight)">ASCII code</span>, which uses 8 bit for every character, where each letter has a reference number which *all programming languages understand* and can lead to programming errors when defining and setting data types and variables in Java.
 
 (ex. char letter = 'a'; => char + 1; will return 'b' BUT int number = a; will return 96 since the ASCII for lower case a is 96)
 
 
 <br>
 
-#### <span style="color: var(--title)">04.04 OTHER SYSTEMS
+#### <a id="number-systems-other-systems"><span style="color: var(--title)">05.04 OTHER SYSTEMS</a></span>
 ---------------------
 <br>
 
@@ -387,27 +390,27 @@ for reference, <span style="color: var(--highlight)">1 byte</span> is <span styl
 <br>
 
 ________
-### <a id="us"><span style="color: var(--title)">05.00 US</a>
+### <a id="us"><span style="color: var(--title)">06.00 US</a></span>
 ________________
 
 <br>
 
 After all of this information, we should start coding a bit! 
-<br> First and foremost you will need to <a href="https://www.oracle.com/java/technologies/downloads/#jdk24-windows"><span style="color: var(--link)">install Java on your computer</a>. 
+<br> First and foremost you will need to <a href="https://www.oracle.com/java/technologies/downloads/#jdk24-windows"><span style="color: var(--link)">install Java on your computer</a></span>. 
 
 > please NEVER EVER EVER install anything if its not from an official source (the actual developpers) and without verifying the installation through the provided key. All installation instructions are in the documentation provided by the developper. FOLLOW THEM. <br> If you run into a problem, if your computer crashes, if you are unsure of the source, etc., trying to undo those installations is long and hard and sometimes near impossible without having to wipe the entirety of your computer. <br> Make sure you know what you are doing before doing. (trust me on this one. Trust the fact that you should trust no one except those who are legally bounded to give you this trust).
 
 <br> Throughout this manual, I will use <a href="https://www.jetbrains.com/idea/download/?source=post_page---------------------------&section=windows"><span style="color: var(--link)">**IntelliJ IDEA Community Edition**</a> IDE but feel free to use which ever you prefer. The shortcuts might not be the same but the idea will always be the same.
 
 For the syntax and everything as the code, we will have those general rules (you can update them in the settings of your IDE) :
-<br> * All curly brackets will be on the same line
-<br> * We will use the camel case naming system (thisIsAVariable)
-<br> * IntelliJ IDEA
-<br> * Maven will be our build (to select on every new project)
-<br> * <a href="https://mvnrepository.com/artifact/junit/junit"><span style="color: var(--link)">JUnit</a> for testing (to add to any new project)
-<br> * JavaFX for any UI
-<br> * SDK and JDK 21 or higher
-<br> * GitHub & Git for version control
+* All curly brackets will be on the same line <br>
+* We will use the camel case naming system (thisIsAVariable) <br>
+* <a href="https://www.jetbrains.com/idea/download/?source=post_page---------------------------&section=windows"><span style="color: var(--link)">IntelliJ IDEA</a></span> (to download) <br>
+* <a href="https://maven.apache.org/what-is-maven.html"><span style="color: var(--link)">Maven</a></span> will be our build (to select on every new project) <br>
+* <a href="https://mvnrepository.com/artifact/junit/junit"><span style="color: var(--link)">JUnit</a></span> for testing (to add to any new project later) <br>
+* JavaFX for any UI <br>
+* SDK and JDK 21 or higher (to download through IntelliJ) <br>
+* <a href="https://desktop.github.com/download/"><span style="color: var(--link)">GitHub</a></span> & <a href="https://git-scm.com/downloads"><span style="color: var(--link)">Git</a></span> for version control (for now I advise you to only download GitHub desktop) <br>
 
 As a reference, you should always have those settings :
 
@@ -418,12 +421,12 @@ IF THE FIRST IMAGE DOESNT LOAD : UNCOMMENT THIS
 <img src="/Images/00_INTRODUCTION_00_createAProjectSettings.png" alt="creating a new project settings"/>
 -->
 
-The only thing you need to change is the GroupId : change it to your GitHub handle or any marking that will act as your copyright. IT will appear on any piece of code that you will write and therefore mark it as yours.
+The only thing you need to change is the GroupId : change it to your GitHub handle or any marking that will act as your copyright. It will appear on any piece of code that you will write and therefore mark it as yours.
 
 <br>
 
 ________
-### <a id="dataTypes"><span style="color: var(--title)">06.00 DATATYPES & NULL</a>
+### <a id="data-types"><span style="color: var(--title)">07.00 DATATYPES & NULL</a></span>
 ________________
 
 <br>
@@ -432,12 +435,12 @@ variables can be different <span style="color: var(--highlight)">data types</spa
 
 Java, like every programming language can do automatic conversions, which is when you force (cast) a type uppon a variable of another type. Conversions towards higher values can work while conversions towards lower values are not recommended since information will be lost or the system will crash. For example, you can convert an integer (4) to a double (4.0) without a problem. The compiler will simply add the decimal point. But, converting the double (4.5) to the integer (4), Java will not do a rounding. It will simply remove the decimal point. 
 
-> <span style="color: var(--link)"> For the type casting reference in Java see  <a href="https://storage.googleapis.com/www.examclouds.com/primitives/widening-conversions.png"><span style="color: var(--link)">**AUTOMATIC CONVERSION IN JAVA**</a>
+> For the type casting reference in Java see  <a href="https://storage.googleapis.com/www.examclouds.com/primitives/widening-conversions.png"><span style="color: var(--link)">**AUTOMATIC CONVERSION IN JAVA**</a></span>
 
 
 <br>
 
-#### <a id="primitive"><span style="color: var(--title)">02.01 PRIMITIVE</a>
+#### <a id="data-types-primitive"><span style="color: var(--title)">07.01 PRIMITIVE</a></span>
 ---------------------
 <br>
 
@@ -474,7 +477,7 @@ public class Main {
 
 <br>
 
-#### <a id="nonPrimitive"><span style="color: var(--title)">02.02 NON-PRIMITIVE</a>
+#### <a id="data-types-non-primitive"><span style="color: var(--title)">07.02 NON-PRIMITIVE</a></span>
 ---------------------
 <br>
 
@@ -505,7 +508,7 @@ public class Main {
 
 <br>
 
-#### <a id="nullDataType"><span style="color: var(--title)">02.02 NULL</a>
+#### <a id="data-types-null"><span style="color: var(--title)">05.03 NULL</a></span>
 ---------------------
 <br>
 
