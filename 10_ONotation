@@ -1,12 +1,12 @@
 
-[#8C8C07]:text
-[#C9A176]:highlight
-[#2C6485]:notes
+[#828E73]:text
+[#FFD464]:highlight
+[#3B3D66]:notes
 
-<span style="color:#8C8CF7">
+<span style="color:#828E73">
 
-# <span style="color:#C9A176">DESKTOP APPLICATIONS IN C# 00
-## <span style="color:#C9A176">INTRODUCTION TO C# PROGRAMMING
+# <span style="color:#828E73">Programming Manual in JAVA
+## <span style="color:#828E73">BIG O NOTATION
 
 <br>
 
@@ -18,11 +18,11 @@ OBJECTS
 * Properties-->
 
 ________
-### <span style="color:#C9A176">01.00 OBJECTS
+### <span style="color:#828E73">01.00 ALGORITHM COMPLEXITY
 ________________
 
 <br>
 
-> <span style="color:#2C6485"> For more information, see <a href="01_OBJECTS.md"><span style="color:#2C6485">**01_OBJECTS.md**</a>
+When we design a software and thus, an algorithm, we 
 
-*A good programming practice is to use objects to **hide** how the program works. This process is called <span style="color:C9A176">encapsulation</span>*
+<span style="color:#FFD464">encapsulation</span>

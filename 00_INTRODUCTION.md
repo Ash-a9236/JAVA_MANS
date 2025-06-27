@@ -1,23 +1,23 @@
 <!--VARIABLES-->
 
-[#8C8C07]:text
-[#C9A176]:highlight
-[#2C6485]:notes
+[#F7E0CD]:text
+[#D69992]:highlight
+[#B15A43]:notes
 
-<span style="color:#8C8CF7">
+<span style="color:#F7E0CD">
 
-# <span style="color:#C9A176">CODING IN JAVA 00
-## <span style="color:#C9A176">INTRODUCTION TO PROGRAMMING
+# <span style="color:#D69992">CODING IN JAVA 00
+## <span style="color:#D69992">INTRODUCTION TO PROGRAMMING
 
 <br>
 TABLE OF CONTENTS <br>
-<br> 01 . . [<span style="color:#8C8CF7">Base Concepts](#baseConcepts)
-<br> 02 . . [<span style="color:#B9C3D6">Some Standards](#someStandards)
-<br> 03 . . [<span style="color:#B9C3D6">IDEs](#ides)
-<br> 04 . . [<span style="color:#B9C3D6">Types of coding and quirks](#codingTypes)
-<br> 05 . . [<span style="color:#B9C3D6"> Number Systems](#numSystems)
-<br> 06 . . [<span style="color:#B9C3D6">Us](#us)
-<br> 07 . . [<span style="color:#B9C3D6">Data Types & NULL](#dataTypes)
+<br> 01 . . [<span style="color:#B15A43">Base Concepts](#baseConcepts)
+<br> 02 . . [<span style="color:#B15A43">Some Standards</span>](#someStandards)
+<br> 03 . . [<span style="color:#B15A43">IDEs</span>](#ides)
+<br> 04 . . [<span style="color:#B15A43">Types of coding and quirks</span>](#codingTypes)
+<br> 05 . . [<span style="color:#B15A43"> Number Systems</span>](#numSystems)
+<br> 06 . . [<span style="color:#B9C3D6">Us</span>](#us)
+<br> 07 . . [<span style="color:#B9C3D6">Data Types & NULL</span>](#dataTypes)
 <br> 08 . . [<span style="color:#B9C3D6">Im stuck!](#stuck)
   <!--
 <br> &emsp; 01.01 . . [<span style="color:#B9C3D6">Some Standards](#someStandards)
@@ -28,45 +28,47 @@ TABLE OF CONTENTS <br>
 <br>
 
 ________
-### <a id="baseConcepts"><span style="color:#C9A176">01.00 BASE CONCEPTS</a>
+### <a id="baseConcepts"><span style="color:#D69992">01.00 BASE CONCEPTS</a>
 ________________
 
 <br>
-Coding is simply translating what you want to say in human-english to a computer-understandable language. It is putting abstact concepts like cats and bananas and making your computer make them do 'stuff', which is basically whatever you want. 
+Coding is simply <span style="color:#D69992">translating</span> what you want to say in human-english to a computer-understandable language. It is putting abstact concepts like cats and bananas and making your computer make them do 'stuff', which is basically whatever you want. 
+<br><br>
 Learning how to code is mostly learning concepts through a language that then further translate to pretty much every programming language.
 Of course, there are different types of programmings, but at the core, an int in Java will have the same definition in C++.
 
-Those coding sheets will be using and teaching Java, an Object Oriented Programming language.
+Those coding sheets will be using and teaching <span style="color:#D69992">Java</span>, an <span style="color:#D69992">Object Oriented Programming language</span>.
 
 <br>
 
 ________
-### <a id="someStandards"><span style="color:#C9A176">02.00 SOME STANDARDS</a>
+### <a id="someStandards"><span style="color:#D69992">02.00 SOME STANDARDS</a>
 ________________
 
 <br>
 In programming, each language has its set of standards, especially for naming. 
 
 In Java (and most other OOP languages) the standards are : 
-<br> &emsp; - Variables are in camel case, therefore : the first word is never capitalized, all words are together, and every first letter of every word is capitalized (i.e. camelCase, num3, tryNum, fName, thisIsASentenceInCamelCase, etc.)
-<br> &emsp; - Non-primary data types and classes start with a capital letter (i.e. Cat, Array, String, Banana, etc.)
-<br> &emsp; - Constants and Enums are always named in all caps (i.e. TRYCOUNT, PI, NUMBER, E, etc.)
-<br> &emsp; - Method naming should be simple and straight to the point (i.e. nameFormatting instead of willFormatAStringToCapitalizeTheFirstLetterOfEveryWord)
-<br> &emsp; - Methods and classes should always think of the 'blackbox', AKA hide code from each other
-<br> &emsp; - Methods should never be more than 50 lines of code
+<br> &emsp; - **Variables are in camel case**, therefore : the first word is never capitalized, all words are together, and every first letter of every word is capitalized (i.e. camelCase, num3, tryNum, fName, thisIsASentenceInCamelCase, etc.)
+<br> &emsp; - **Non-primary data types and classes start with a capital letter** (i.e. Cat, Array, String, Banana, etc.)
+<br> &emsp; - **Constants and Enums are always named in all caps** (i.e. TRYCOUNT, PI, NUMBER, E, etc.)
+<br> &emsp; - **Method naming should be simple** and straight to the point (i.e. nameFormatting instead of willFormatAStringToCapitalizeTheFirstLetterOfEveryWord)
+<br> &emsp; - **Methods and classes should always think of the 'blackbox'**, AKA hide code from each other
+<br> &emsp; - **Methods should never be more than 50 lines of code**
 <br> &emsp; - When a piece of code is reused more than 3 times throughout your code, create a method and call it. **Avoid redundant code at all cost**
-<br> &emsp; - Avoid unecessary spaces in the code (i.e. extra lines)
-<br> &emsp; - Classes should always be organized (data fields, constructors, helper methods, equals and hashcode, getters and setters)
+<br> &emsp; - **Avoid unecessary spaces in the code** (i.e. extra lines)
+<br> &emsp; - **Classes should always be organized** (data fields, constructors, helper methods, equals and hashcode, getters and setters)
+<br> &emsp; - **Every method should have its documentation** 
 
 <br>
 
 ________
-### <a id="ides"><span style="color:#C9A176">03.00 INTEGRATED DEVELOPMENT ENVIRONMENT</a>
+### <a id="ides"><span style="color:#D69992">03.00 INTEGRATED DEVELOPMENT ENVIRONMENT</a>
 ________________
 
 <br>
 
-to code we need something called a <span style="color:C9A176">coding environment</span>, or <span style="color:C9A176">IDE</span> (Integrated Development Environment)
+to code we need something called a <span style="color:D69992">coding environment</span>, or <span style="color:D69992">IDE</span> (Integrated Development Environment)
 
 They are apps which contain everything you need to be able to code and then compile said code
 
@@ -79,9 +81,9 @@ They usually contain :
 <br> &emsp; - Code snippets & navigation
 <br> &emsp; - Extensions and Plugins
 
-> <span style="color:#2C6485"> For more information see  <a href="https://www.geeksforgeeks.org/what-is-ide/"><span style="color:#2C6485">**WHAT IS AN IDE?**</a>
+> <span style="color:#B15A43"> For more information see  <a href="https://www.geeksforgeeks.org/what-is-ide/"><span style="color:#B15A43">**WHAT IS AN IDE?**</a>
 
-IDE are usually paying, but they also usually have a <span style="color:C9A176">Communitiy Edition</span> which is free
+IDE are usually paying, but they also usually have a <span style="color:D69992">Communitiy Edition</span> which is free
 
 Some popular IDEs include :
 <br> &emsp; - Visual Studio Code
@@ -110,6 +112,8 @@ public class Main {
 Console :
 ```
 Hello World !
+
+process exit 0
 ```
 
 <br>
@@ -117,16 +121,153 @@ Hello World !
 <br>
 
 ________
-### <a id="codingTypes"><span style="color:#C9A176">04.00 TYPES OF CODING & QUIRKS</a>
+### <a id="codingTypes"><span style="color:#D69992">04.00 TYPES OF CODING & QUIRKS</a>
 ________________
 
 <br>
+In this manual, we will go through programming with Java but, as you might have guessed, there are many many more programming languages and types of programming.
+<br><br>
+
+>*note that I will simplify and only present two styles in this manual*
+
+________
+### <span style="color:#D69992">04.01 TYPES
+________________
+
+<br>
+
+As mentionned, Java is an <span style="color:D69992">OOP</span> or <span style="color:D69992">Object Oriented</span>. This is one of the most used type of programming right now! For example, the Windows OS (operating system) is programmed in OOP languages (C++, C) (You can access its object through the hive, AKA Regedit).
+<br> In OOP, the compiler will be able to 'jump' from action to actions or file to file through 'method calls'. This allows us to write and organize code more efficiently.
+
+<br>
+
+
+```java
+public class Main {
+    public static void main (String[] args) {
+        System.out.println("Hello World !");
+        methodC(); //'calling' the method 'methodC'
+        methodA();
+        methodB();
+    }
+
+    public static void methodA () {
+        System.out.println("methodA");
+    }
+
+       public static void methodB () {
+        System.out.println("methodB");
+    }
+
+       public static void methodC () {
+        System.out.println("methodC");
+    }
+}
+```
+
+Console :
+```console
+methodC
+methodA
+methodB
+
+process exit 0
+```
+
+<br><br>
+Another style is called <span style="color:D69992">scripting</span>. At the opposite of OOP, the compiler cannot 'jump' between objects, files, and actions, but rather goes and executes everything line by line.
+
+<br>
+For example, HTML and CSS (for webpages) are scripting languages. Bash (in your terminal) and git are both scripting languages as well.
+
+<br>
+
+
+```console
+echo hello
+echo 'this is line 1'
+echo 'I cannot go back to line 1'
+```
+
+Console :
+```console
+hello
+this is line 1
+I cannot go back to line 1
+
+process exit 0
+```
+
+________
+### <span style="color:#D69992">04.02 HIGH & LOW
+________________
+
+<br>
+
+You can also differenciate programming languages with how close they are to english vs how close they are to machine language.
+The closer to the machine the lower their level of abstraction is. Basically, the lower they are, the more you need to understand how the machine works, and the more you will need to declare everything for your computer. 
+The lowest programming language (apart from binary) is called Assembly. It was the first programming language and is one-to-one with binary, hence why it is so low.
+
+When we are talking about high level programming languages, we mean languages that are almost like written english. They might seem more intuitive but be mindful that they hide *a lot*, which we call 'abstraction'.
+
+The furtest you go from the hardware, the more abstraction you add to your program. You will see that concepts from the first few ideas we will go through are very close to what the machine does and how it handles basic computation. As we go, we will remove ourselves gradually from me & the machine, and the questions of 'how will the computer understand this?' and slowly go to more abstract concepts.
+
+
+|            | HIGH | LOW  |
+|------------|------|------|
+| Fridenly to | Programmer | Machine|
+| Understandable | Easy | Not really |
+| Readability | Easy | Complex |
+| Debugging | Easy | Complex |
+| Maintenance | Easy | Complex |
+| Portable | Yes | No |
+| Runs on | Anything | Machine-dependent |
+| Translation to binary with | Compiler / Interpreter | Assembler |
+| Used | Widely | Not common |
+| Execution speed | Slow | Fast |
+
+
+A few languages by levels, lowest to highest :
+
+Machine language > Assembly > C > C++ > Rust > Go > Java > JavaScript > Ruby > Python
+
+* **Machine Code and Assembly** are still the lowest in terms of how close they are to the hardware.
+* **C and C++** are very close to hardware as well, with C++ adding more abstraction features like OOP.
+* **Rust** is a modern systems language that provides memory safety with low-level control.
+* **Go** is designed for simplicity and performance, with some higher-level abstractions.
+* **Java** runs on the JVM, offering portability and automatic memory management.
+* **JavaScript** is a higher-level scripting language primarily used for web development.
+* **Ruby** is even higher-level, known for its elegant syntax and simplicity.
+* **Python** is very high-level and emphasizes ease of use, often abstracting away many details of memory and processing.
+
+*All from ChatGPT summary*
+
+________
+### <span style="color:#D69992">04.03 QUIRKS
+________________
+
+<br>
+
+All programming languages have 'quirks' that you need to be aware of. In Java, you must note (principally) that 
+
+* It is **case sensitive** : hello and HELLO are not the same, int a = 2; and int A  = 2; are not the same
+* You need to **define the type of variable** : Java does not have an interpreter, therefore it cannot 'guess' or 'assume' the type of a variable
+* You need to **define the access modifiers** for the methods : public, private, protected, default
+* **Automatic garbage collection** : you do not need to worry about the discarded objects and variables
+* **NullPointerException** : is an exception that you will see a lot and will have to debug a lot. Java is not able to handle null pointers and therefore exits if the null is not manually handled
+* **Wrapper Classes** are different from their primitive data types. This leads to type conversion errors when you upcast or downcast.
+* **No multiple inheritance** : a child can only have one parent (which we can override by implementing multiple interfaces)
+* **No multiple return values** : each method can only return one type of value and one value only (we can override this by returning an object or an array)
+
+
+Other programming languages have their own quirks, like SQL that is case insensitive and differs between DBMS (Database Management System), or python that needs to have specific indentation. Once you learn them programming in that language becomes relatively easy, especially if you know the base concepts.
+
 
 
 <br>
 
 ________
-### <a id="numSystems"><span style="color:#C9A176">04.00 NUMBER SYSTEMS</a>
+### <a id="numSystems"><span style="color:#D69992">04.00 NUMBER SYSTEMS</a>
 ________________
 
 <br>
@@ -135,20 +276,24 @@ In programming (and other computer-related fields), you will come accross differ
 They are basically shortcuts to make binary calculation, which makes it easier for a human to translate a random number, value, or even idea into something the computer can understand.
 
 ________
-### <span style="color:#C9A176">04.01 COMPUTER MEMORY
+### <span style="color:#D69992">04.01 COMPUTER MEMORY
 ________________
 
 <br>
 
-For obvious reasons, your computer cannot speak 'human'. Since the beginning of computing, we tried to make a numbering system that could work and that lead to the fewest possible errors. After quite a bit of searching, we settled down on a 2-digit system which we called 'binary'. Your computer can therefore only understand two states : there is electricity (on) and there is no electricity (off), which we directly translate to 0s and 1s called <span style="color:C9A176">bits</span>
+Your computer has two memories : the RAM (Rapid / Random Access Memory) and the SSD (Solid State Drive). The SSD is like a giant library that contains everything from your operating system (OS like Windows, Mac, Linux, Adroid, ect.) to your word documents or even this file. 
+<br> The RAM is like a cart beside the librarian's desk where all the books you are using at the moments are stored. The RAM makes it easier and faster to access them.
+<br> When you are programming, you are only using the RAM. All the variables, objects and the program itself will run on the RAM.
+
+For obvious reasons, your computer cannot speak 'human'. Since the beginning of computing, we tried to make a numbering system that could work and that lead to the fewest possible errors. After quite a bit of searching, we settled down on a 2-digit system which we called 'binary'. Your computer can therefore only understand two states : there is electricity (on) and there is no electricity (off), which we directly translate to 0s and 1s called <span style="color:D69992">bits</span>
 
 <br>
 
-#### <span style="color:#C9A176">04.02 BINARY
+#### <span style="color:#D69992">04.02 BINARY
 ---------------------
 <br>
 
-the <span style="color:C9A176">binary system</span> counts in powers of <span style="color:C9A176">2</span> instead of our regular number system (decimal) which counts in powers of 10
+the <span style="color:D69992">binary system</span> counts in powers of <span style="color:D69992">2</span> instead of our regular number system (decimal) which counts in powers of 10
 
 binary numbers can only count in 0s and 1s therefore :
 
@@ -162,7 +307,7 @@ etc.
 
 <br>
 
-a <span style="color:C9A176">byte</span> is composed of <span style="color:C9A176">8 bits</span>, therefore, <span style="color:C9A176">0000 0000</span>
+a <span style="color:D69992">byte</span> is composed of <span style="color:D69992">8 bits</span>, therefore, <span style="color:D69992">0000 0000</span>
 
 
 | NAME | SYMBOL | SIZE (b) | SIZE (B) | SIZE (KB) | SIZE (MB) | SIZE (GB) |
@@ -178,16 +323,16 @@ a <span style="color:C9A176">byte</span> is composed of <span style="color:C9A17
 
 <br>
 
-#### <span style="color:#C9A176">04.03 CHARACTERS & ASCII
+#### <span style="color:#D69992">04.03 CHARACTERS & ASCII
 ---------------------
 <br>
 
-> <span style="color:#2C6485"> For the ASCII reference sheet see  <a href="https://www.ascii-code.com/"><span style="color:#2C6485">**ASCII TABLE**</a>
+> <span style="color:#B15A43"> For the ASCII reference sheet see  <a href="https://www.ascii-code.com/"><span style="color:#B15A43">**ASCII TABLE**</a>
 
 
 characters such as letters and symbols are also represented in binary for computers.
 
-to reference them, we use a reference sheet called the <span style="color:C9A176">ASCII code</span>, which uses 8 bit for every character
+to reference them, we use a reference sheet called the <span style="color:D69992">ASCII code</span>, which uses 8 bit for every character
 
 each letter has a reference number which *all programming languages understand* and can lead to programming errors when defining and setting data types and variables
 
@@ -196,7 +341,7 @@ each letter has a reference number which *all programming languages understand* 
 
 <br>
 
-#### <span style="color:#C9A176">04.04 OTHER SYSTEMS
+#### <span style="color:#D69992">04.04 OTHER SYSTEMS
 ---------------------
 <br>
 
@@ -213,74 +358,87 @@ The one that is the most used in other field is the HEXADECIMAL system, for most
 | HEXADECIMAL | 16 | BINARY | 1 - 9 + A - F | 01FA29 (is also used as colour code)|
 
 
-for reference, <span style="color:C9A176">1 byte</span> is <span style="color:C9A176">0000</span> and will range from <span style="color:C9A176">0</span> to <span style="color:C9A176">255</span> (256 total values - the 0 value)
+for reference, <span style="color:D69992">1 byte</span> is <span style="color:D69992">0000</span> and will range from <span style="color:D69992">0</span> to <span style="color:D69992">255</span> (256 total values - the 0 value)
 
 
 
 <br>
 
 ________
-### <a id="us"><span style="color:#C9A176">05.00 US</a>
+### <a id="us"><span style="color:#D69992">05.00 US</a>
 ________________
 
 <br>
 
 After all of this information, we should start coding a bit! 
-Throughout this manual, I will use IntelliJ IDEA Community Edition IDE but feel free to use which ever you prefer. The shortcuts might not be the same but the idea will always be the same.
+<br> First and foremost you will need to <a href="https://www.oracle.com/java/technologies/downloads/#jdk24-windows"><span style="color:#B15A43">install Java on your computer</a>. 
 
-For the syntax and everything as the code, we will have those general rules :
+> please NEVER EVER EVER install anything if its not from an official source (the actual developpers) and without verifying the installation through the provided key. All installation instructions are in the documentation provided by the developper. FOLLOW THEM. <br> If you run into a problem, if your computer crashes, if you are unsure of the source, etc., trying to undo those installations is long and hard and sometimes near impossible without having to wipe the entirety of your computer. <br> Make sure you know what you are doing before doing. (trust me on this one. Trust the fact that you should trust no one except those who are legally bounded to give you this trust).
+
+<br> Throughout this manual, I will use <a href="https://www.jetbrains.com/idea/download/?source=post_page---------------------------&section=windows"><span style="color:#B15A43">**IntelliJ IDEA Community Edition**</a> IDE but feel free to use which ever you prefer. The shortcuts might not be the same but the idea will always be the same.
+
+For the syntax and everything as the code, we will have those general rules (you can update them in the settings of your IDE) :
 <br> * All curly brackets will be on the same line
 <br> * We will use the camel case naming system (thisIsAVariable)
 <br> * IntelliJ IDEA
-<br> * Maven will be our build
-<br> * JUnit for testing
+<br> * Maven will be our build (to select on every new project)
+<br> * <a href="https://mvnrepository.com/artifact/junit/junit"><span style="color:#B15A43">JUnit</a> for testing (to add to any new project)
 <br> * JavaFX for any UI
-<br> * SDK 21
+<br> * SDK 21 or higher
 <br> * GitHub & Git for version control
+
+As a reference, you should always have those settings :
+
+![image info](/Images/00_INTRODUCTION_00_createAProjectSettings.png)
+<img src="/Images/00_INTRODUCTION_00_createAProjectSettings.png" alt="creating a new project settings"/>
+
+The only thing you need to change is the GroupId : change it to your GitHub handle or any marking that will act as your copyright. IT will appear on any piece of code that you will write and therefore mark it as yours.
 
 <br>
 
 ________
-### <a id="dataTypes"><span style="color:#C9A176">06.00 DATATYPES & NULL</a>
+### <a id="dataTypes"><span style="color:#D69992">06.00 DATATYPES & NULL</a>
 ________________
 
 <br>
 
-variables can be different <span style="color:C9A176">data types</span>, which we define, to tell the computer what 'stuff' something is. Some languages (like JavaScript, Python, Ruby, ect.) do not necessitate explicit data type definition. They are called <span style="color:C9A176">dynamically typed</span> (or untyped) languages. Java is **not** one of those languages. You will need to specify everything from start to finish. For example, if we want to define a simple integer (number), like 4, the compilier doesn't know what '4' is, therefore, we add <span style="color:C9A176">int</span> in front of it, thus defining 4 for the computer
+variables can be different <span style="color:D69992">data types</span>, which we define, to tell the computer what 'stuff' something is. Some languages (like JavaScript, Python, Ruby, ect.) do not necessitate explicit data type definition. They are called <span style="color:D69992">dynamically typed</span> (or untyped) languages. Java is **not** one of those languages. You will need to specify everything from start to finish. For example, if we want to define a simple integer (number), like 4, the compilier doesn't know what '4' is, therefore, we add <span style="color:D69992">int</span> in front of it, thus defining 4 for the computer
 
 Java, like every programming language can do automatic conversions, which is when you force (cast) a type uppon a variable of another type. Conversions towards higher values can work while conversions towards lower values are not recommended since information will be lost or the system will crash. For example, you can convert an integer (4) to a double (4.0) without a problem. The compiler will simply add the decimal point. But, converting the double (4.5) to the integer (4), Java will not do a rounding. It will simply remove the decimal point. 
 
-> <span style="color:#2C6485"> For the type casting reference in Java see  <a href="https://storage.googleapis.com/www.examclouds.com/primitives/widening-conversions.png"><span style="color:#2C6485">**AUTOMATIC CONVERSION IN JAVA**</a>
+> <span style="color:#B15A43"> For the type casting reference in Java see  <a href="https://storage.googleapis.com/www.examclouds.com/primitives/widening-conversions.png"><span style="color:#B15A43">**AUTOMATIC CONVERSION IN JAVA**</a>
 
 
 <br>
 
-#### <a id="primitive"><span style="color:#C9A176">02.01 PRIMITIVE</a>
+#### <a id="primitive"><span style="color:#D69992">02.01 PRIMITIVE</a>
 ---------------------
 <br>
 
-primitive data types are data that is <span style="color:C9A176">directly referenced</span> in the memory of the computer as a series of bytes (0 and 1) they can hold a maximum value defined by the number of bytes they are defined to occupy in the computer memory
+primitive data types are data that is <span style="color:D69992">directly referenced</span> in the memory of the computer as a series of bytes (0 and 1) they can hold a maximum value defined by the number of bytes they are defined to occupy in the computer memory
+
+It is important to know the basic minimum and maximum value for your datatypes for specific cases. For example, doing a calculator with only ints will make you run into problems if you try to input numbers that will add to one higher than the maximum value. Another example would be trying to store phone numbers in ints (which will definitly not work : trust me we all tried).
 
 | NAME | SYMBOL | SIZE | MIN VALUE | MAX VALUE | 
 |------|--------|------|-----------|-----------|
-| integer | <span style="color:C9A176">int</span> | 4 bytes | -2 147 483 648 | 2 147 483 647 |
-| double | <span style="color:C9A176">double</span> | 8 bytes | -1.79769313486232 e 308 | 1.79769313486232 e 308 |
-| float | <span style="color:C9A176">float</span> | 4 bytes | -3.402823 e 38 | 3.402823 e 38 |
-| boolean | <span style="color:C9A176">bool</span> | 1 byte | false | true |
-| character | <span style="color:C9A176">char</span> | 2 bytes |  | |
+| integer | <span style="color:D69992">int</span> | 4 bytes | -2 147 483 648 | 2 147 483 647 |
+| double | <span style="color:D69992">double</span> | 8 bytes | -1.79769313486232 e 308 | 1.79769313486232 e 308 |
+| float | <span style="color:D69992">float</span> | 4 bytes | -3.402823 e 38 | 3.402823 e 38 |
+| boolean | <span style="color:D69992">bool</span> | 1 byte | false | true |
+| character | <span style="color:D69992">char</span> | 2 bytes |  | |
 
 <br>
 
-#### <a id="nonPrimitive"><span style="color:#C9A176">02.02 NON-PRIMITIVE</a>
+#### <a id="nonPrimitive"><span style="color:#D69992">02.02 NON-PRIMITIVE</a>
 ---------------------
 <br>
 
-In programming languages, non-primitive data types are data types which are actually <span style="color:C9A176">classes</span>. Non-primitive data types are <span style="color:C9A176">not directly referenced</span> in the memory, but the computer rather holds the <span style="color:C9A176">memory address</span> of the class. 
-In Java the only non-primitive data type (for now) is the <span style="color:C9A176">String</span>. It is easier to see it in java as it is written with a capitalized s (String), therefore defining it as a class
+In programming languages, non-primitive data types are data types which are actually <span style="color:D69992">classes</span>. Non-primitive data types are <span style="color:D69992">not directly referenced</span> in the memory, but the computer rather holds the <span style="color:D69992">memory address</span> of the class. 
+In Java the only non-primitive data type (for now) is the <span style="color:D69992">String</span>. It is easier to see it in java as it is written with a capitalized s (String), therefore defining it as a class
 
 -> the string is a sequence of characters
 
-non-primitive data types also contain methods which can be used to modify them (for example : <span style="color:C9A176">.toUpperCase()</span> which capitalizes every letter of a given string)
+non-primitive data types also contain methods which can be used to modify them (for example : <span style="color:D69992">.toUpperCase()</span> which capitalizes every letter of a given string)
 
 <br>
 
@@ -302,7 +460,7 @@ public class Main {
 
 <br>
 
-#### <a id="nullDataType"><span style="color:#C9A176">02.02 NULL</a>
+#### <a id="nullDataType"><span style="color:#D69992">02.02 NULL</a>
 ---------------------
 <br>
 
@@ -315,9 +473,11 @@ Be careful :
 
 
 ________
-### <a id="stuck"><span style="color:#C9A176">09.00 IM STUCK!</a>
+### <a id="stuck"><span style="color:#D69992">09.00 IM STUCK!</a>
 ________________
 
 <br>
+
+
 
 
