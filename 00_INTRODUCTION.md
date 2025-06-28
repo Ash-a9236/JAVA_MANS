@@ -41,7 +41,7 @@ TABLE OF CONTENTS <br> <br>
 <br> &emsp; 01.03 . . [<span style="color:#B9C3D6">Types of coding and quirks](#codingTypes)
 <br> &emsp; 01.04 . . [<span style="color:#B9C3D6"> Number Systems](#methods) -->
 
-<br>
+<br> <br>
 
 ________
 ### <a name="base-concepts"><span style="color: var(--title)">01.00 BASE CONCEPTS</span></a>
@@ -54,7 +54,6 @@ Learning how to code is mostly learning concepts through a language that then fu
 Of course, there are different types of programmings, but at the core, an int in Java will have the same definition in C++.
 <br><br>
 Those coding sheets will be using and teaching <span style="color: var(--highlight)">Java</span>, an <span style="color: var(--highlight)">Object Oriented Programming language</span>.
-
 
 
 <br> <br>
@@ -78,7 +77,7 @@ In Java (and most other OOP languages) the standards are : <br> <br>
 * <span style="color: var(--highlight)">Classes should always be organized</span> : data fields, constructors, helper methods, equals and hashcode, getters and setters <br> <br>
 * <span style="color: var(--highlight)">Every method should have its documentation</span>
 
-<br>
+<br> <br>
 
 ________
 ### <a id="ides"><span style="color: var(--title)">03.00 INTEGRATED DEVELOPMENT ENVIRONMENT</a>
@@ -150,7 +149,7 @@ In this manual, we will go through programming with Java but, as you might have 
 
 <br>
 
-________
+
 ### <a id="coding-types-types"><span style="color: var(--title)">04.01 TYPES</span></a>
 ________________
 
@@ -219,9 +218,8 @@ I cannot go back to line 1
 Process finished with exit code 0
 ```
 
-<br> <br>
+<br> 
 
-________
 ### <a id="coding-types-high-and-low"><span style="color: var(--title)">04.02 HIGH & LOW</span></a>
 ________________
 
@@ -267,7 +265,6 @@ Machine language > Assembly > C > C++ > Rust > Go > Java > JavaScript > Ruby > P
 
 <br>
 
-________
 ### <a id="coding-types-quirks"><span style="color: var(--title)">04.03 QUIRKS</span></a>
 ________________
 
@@ -302,7 +299,7 @@ They are basically shortcuts to make binary calculation, which makes it easier f
 
 <br>
 
-________
+
 ### <a id="number-systems-computer-memory"><span style="color: var(--title)">05.01 COMPUTER MEMORY</span></a>
 ________________
 
@@ -317,7 +314,7 @@ For obvious reasons, your computer cannot speak 'human'. Since the beginning of 
 <br>
 
 #### <a id="number-systems-binary"><span style="color: var(--title)">05.02 BINARY</span></a>
----------------------
+____________
 <br>
 
 the <span style="color: var(--highlight)">binary system</span> counts in powers of <span style="color: var(--highlight)">2</span> instead of our regular number system (decimal) which counts in powers of 10
@@ -351,7 +348,7 @@ a <span style="color: var(--highlight)">byte</span> is composed of <span style="
 <br>
 
 #### <a id="number-systems-characters-and-ascii"><span style="color: var(--title)">05.03 CHARACTERS & ASCII</span></a>
----------------------
+_________________
 <br>
 
 > For the ASCII reference sheet see <a href="https://www.ascii-code.com/"><span style="color: var(--link)">**ASCII**</a></span> <br>For the Unicode reference chart see <a href="https://www.unicode.org/charts/"><span style="color: var(--link)">**UNICODE**</a></span>
@@ -367,7 +364,7 @@ To reference them, we use a reference sheet called the <span style="color: var(-
 <br>
 
 #### <a id="number-systems-other-systems"><span style="color: var(--title)">05.04 OTHER SYSTEMS</a></span>
----------------------
+______________
 <br>
 
 through programming we use different numbering system to be able to communicate more effectively with a computer (after all, computers think in binary, not in decimals)
@@ -387,7 +384,7 @@ for reference, <span style="color: var(--highlight)">1 byte</span> is <span styl
 
 
 
-<br>
+<br> <br>
 
 ________
 ### <a id="us"><span style="color: var(--title)">06.00 US</a></span>
@@ -411,6 +408,7 @@ For the syntax and everything as the code, we will have those general rules (you
 * JavaFX for any UI <br>
 * SDK and JDK 21 or higher (to download through IntelliJ) <br>
 * <a href="https://desktop.github.com/download/"><span style="color: var(--link)">GitHub</a></span> & <a href="https://git-scm.com/downloads"><span style="color: var(--link)">Git</a></span> for version control (for now I advise you to only download GitHub desktop) <br>
+* If you want, I use the <a href="https://plugins.jetbrains.com/plugin/18682-catppuccin-theme"><span style="color: var(--link)">Catppucin theme</a></span> - Mocha (search in the pluggins, it should be there)
 
 As a reference, you should always have those settings :
 

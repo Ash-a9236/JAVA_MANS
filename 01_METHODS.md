@@ -33,7 +33,7 @@ TABLE OF CONTENTS <br> <br>
 [<span style="color: var(--link)">07 . . Input</span>](#input) <br>
 [<span style="color: var(--link)">07 . . Documentation</span>](#documentation) <br>
 
-<br>
+<br> <br>
 
 ________
 ### <a name="base-concepts"><span style="color: var(--title)">01.00 BASE CONCEPTS</span></a>
@@ -78,18 +78,64 @@ public class Main {
 }
 ```
 
+As you might have noticed, all methods and classes are enclosed in curly brackets ({}). Those brackets define the method's start and end as well as <span style="color: var(--highlight)">scope</span> of the variables.
+
+Variables all have scopes in which you can use them, and after the scope, they are automatically deleted by the program. You, as the programmer, needs to know and define the scope of each variable you use in your program.
+
+
+```java
+public class Main {
+    public static void main (String[] args) {
+        int num1 = 5; //scope start of num1
+        int num2 = 7;
+
+        int num3 = add (num1, num2); //a is now num1, b is now num2, c is now num3
+        System.out.println(num3); //will print 14 (5 + 7 + 2)
+    } //scope end of : num1, num2, num3
+
+    public static int add (int a, int b) { //scope start of a, b
+        int c = 2; //scope start of c
+        c += a + b; //+= means c = c + a + b
+        return c;
+    } //scope end of c
+}
+```
+
 <br>
 
-________
 ### <a id="base-concepts-main"><span style="color: var(--title)">01.01 MAIN</span></a>
 ________________
 
 <br>
 
-The <span style="color: var(--highlight)">main</span> method is your program's entry point
+In my previous examples you might have seen this : 
+
+```java
+public class Main {
+    public static void main (String[] args) {
+    
+    }
+}
+```
+
+This is called the <span style="color: var(--highlight)">main</span> class and method. For now, you do not need to worry about the class, but the method is what we are looking for. 
+
+A Java program cannot run without a main method since it is the entry point of the program. You can see the entire program as a list of steps to do, and the main method would be step 0. You can add a main method to any class, but know that if you delete the main class, you need to define which is the entry point.
+
+To add a main method to a class, you can simply write it (public static void main (String[] args) {} OR psvm + tab on IntelliJ) and the compiler will recognize it.
 
 
+<br> <br>
 
+________
+### <a name="console"><span style="color: var(--title)">02.00 CONSOLE</span></a>
+________________
+
+<br>
+
+When you compile and run the code, a new window will open either in the IDE's built-in terminal, or in your computer's terminal itself. The console will contain the output of the code as a process exit. 
+
+You can print on the console as we have done it with <span style="color: var(--highlight)">System.out.println();</span> (System -> Output -> Print + new line)
 
 
 </span>
