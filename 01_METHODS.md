@@ -80,7 +80,7 @@ public class Main {
 
 As you might have noticed, all methods and classes are enclosed in curly brackets ({}). Those brackets define the method's start and end as well as <span style="color: var(--highlight)">scope</span> of the variables.
 
-Variables all have scopes in which you can use them, and after the scope, they are automatically deleted by the program. You, as the programmer, needs to know and define the scope of each variable you use in your program.
+Variables all have scopes in which you can use them, and after the scope, they are automatically deleted by Java. You, as the programmer, needs to know and define the scope of each variable you use in your program.
 
 
 ```java
@@ -133,6 +133,7 @@ ________________
 
 <br>
 
+The terminal or console is the origin of what computers where before GUI (Graphical User Interface). They are called CLI (Command Line Interface) because to interact with them you need to write commands. The terminal 
 When you compile and run the code, a new window will open either in the IDE's built-in terminal, or in your computer's terminal itself. The console will contain the output of the code as a process exit. 
 
 You can print on the console as we have done it with <span style="color: var(--highlight)">System.out.println();</span> (System -> Output -> Print + new line)
