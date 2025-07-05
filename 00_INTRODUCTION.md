@@ -38,11 +38,6 @@ TABLE OF CONTENTS <br> <br>
   &emsp; [<span style="color: var(--link)">01 . . Primitive</span>](#data-types-primitive) <br>
   &emsp; [<span style="color: var(--link)">02 . . Non-Primitive</span>](#data-types-non-primitive) <br>
   &emsp; [<span style="color: var(--link)">03 . . Null</span>](#data-types-null) <br>
-  <!--
-<br> &emsp; 01.01 . . [<span style="color:#B9C3D6">Some Standards](#someStandards)
-<br> &emsp; 01.02 . . [<span style="color:#B9C3D6">IDEs](#ides)
-<br> &emsp; 01.03 . . [<span style="color:#B9C3D6">Types of coding and quirks](#codingTypes)
-<br> &emsp; 01.04 . . [<span style="color:#B9C3D6"> Number Systems](#methods) -->
 
 <br> <br>
 
