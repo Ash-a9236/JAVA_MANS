@@ -169,9 +169,9 @@ ________________
 
 <br>
 
-The terminal or console is the origin of what computers where before GUI (Graphical User Interface). They are called CLI (Command Line Interface) because to interact with them you need to write commands. The terminal 
+The terminal or console is the origin of what computers where before GUI (Graphical User Interface). They are called CLI (Command Line Interface) because to interact with them you need to write commands.
+
 When you compile and run the code, a new window will open either in the IDE's built-in terminal, or in your computer's terminal itself. The console will contain the output of the code as a process exit. 
-When you compile and run the code, a new window will open either in the IDE's built-in terminal, or in your computer's terminal itself. The console will contain the output of the code as well as a process exit. 
 
 You can print on the console as we have done it with <span style="color: var(--highlight)">System.out.println();</span> (System Class -> Output field -> Print + new line method), or write the shortcut <span style="color: var(--highlight)">sout + tab</span>.
 
