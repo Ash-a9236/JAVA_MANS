@@ -30,8 +30,11 @@ TABLE OF CONTENTS <br> <br>
     &emsp; [<span style="color: var(--link)">01 . . Computer Memory</span>](#number-systems-computer-memory) <br>
     &emsp; [<span style="color: var(--link)">02 . . Binary</span>](#number-systems-binary) <br>
     &emsp; [<span style="color: var(--link)">03 . . Other Systems</span>](#number-systems-other-systems) <br>
-[<span style="color: var(--link)">06 . . Us</span>](#us) <br> 
-[<span style="color: var(--link)">07 . . Data Types & NULL</span>](#data-types) <br>
+[<span style="color: var(--link)">06 . . Operations</span>](#operations) <br> 
+    &emsp; [<span style="color: var(--link)">01 . . Arithmetic</span>](#operations-arithmetic) <br>
+    &emsp; [<span style="color: var(--link)">02 . . Logic Gates</span>](#operations-logic-gates) <br>
+[<span style="color: var(--link)">07 . . Us</span>](#us) <br> 
+[<span style="color: var(--link)">08 . . Data Types & NULL</span>](#data-types) <br>
   &emsp; [<span style="color: var(--link)">01 . . Primitive</span>](#data-types-primitive) <br>
   &emsp; [<span style="color: var(--link)">02 . . Non-Primitive</span>](#data-types-non-primitive) <br>
   &emsp; [<span style="color: var(--link)">03 . . Null</span>](#data-types-null) <br>
@@ -49,7 +52,12 @@ ________________
 
 <br>
 Coding is simply <span style="color: var(--highlight)">translating</span> what you want to say in human-english to a computer-understandable language. It is putting abstact concepts like cats and bananas and making your computer make them do 'stuff', which is basically whatever you want. 
-<br><br>
+
+<br>
+
+In other words, <span style="color: var(--highlight)">the software of the computer is the sets of instructions for the hardware to perform a specific task</span>.
+
+<br>
 Learning how to code is mostly learning concepts through a language that then further translate to pretty much every programming language.
 Of course, there are different types of programmings, but at the core, an int in Java will have the same definition in C++.
 <br><br>
@@ -72,7 +80,7 @@ In Java (and most other OOP languages) the standards are : <br> <br>
 * <span style="color: var(--highlight)">Method naming should be simple</span> and straight to the point : nameFormatting instead of willFormatAStringToCapitalizeTheFirstLetterOfEveryWord <br> <br>
 * <span style="color: var(--highlight)">Methods and classes should always think of the 'blackbox'</span> : hide code from each other <br> <br>
 * <span style="color: var(--highlight)">Methods should never be more than 50 lines of code</span> <br><br>
-* When a piece of code is reused more than 3 times throughout your code, create a method and call it. <span style="color: var(--highlight)">Avoid redundant code at all cost</span> <br> <br>
+* <span style="color: var(--highlight)">Avoid redundant code at all cost</span> : When a piece of code is reused more than 3 times throughout your code, create a method and call it.  <br> <br>
 * <span style="color: var(--highlight)">Avoid unecessary spaces in the code</span> (i.e. extra lines) <br> <br>
 * <span style="color: var(--highlight)">Classes should always be organized</span> : data fields, constructors, helper methods, equals and hashcode, getters and setters <br> <br>
 * <span style="color: var(--highlight)">Every method should have its documentation</span>
@@ -80,7 +88,7 @@ In Java (and most other OOP languages) the standards are : <br> <br>
 <br> <br>
 
 ________
-### <a id="ides"><span style="color: var(--title)">03.00 INTEGRATED DEVELOPMENT ENVIRONMENT</a>
+#### <a id="ides"><span style="color: var(--title)">03.00 INTEGRATED DEVELOPMENT ENVIRONMENT</a>
 ________________
 
 <br>
@@ -119,6 +127,8 @@ If the code contains an error, the terminal will also display the error type and
 <br>
 
 ```java
+package asha9236.example;
+
 public class Main {
     public static void main (String[] args) {
         System.out.println("Hello World !");
@@ -150,7 +160,7 @@ In this manual, we will go through programming with Java but, as you might have 
 <br>
 
 
-### <a id="coding-types-types"><span style="color: var(--title)">04.01 TYPES</span></a>
+#### <a id="coding-types-types"><span style="color: var(--title)">04.01 TYPES</span></a>
 ________________
 
 <br>
@@ -162,6 +172,8 @@ As mentionned, Java is an <span style="color: var(--highlight)">OOP</span> or <s
 
 
 ```java
+package asha9236.example;
+
 public class Main {
     public static void main (String[] args) {
         System.out.println("Hello World !");
@@ -220,7 +232,7 @@ Process finished with exit code 0
 
 <br> 
 
-### <a id="coding-types-high-and-low"><span style="color: var(--title)">04.02 HIGH & LOW</span></a>
+#### <a id="coding-types-high-and-low"><span style="color: var(--title)">04.02 HIGH & LOW</span></a>
 ________________
 
 <br>
@@ -265,7 +277,7 @@ Machine language > Assembly > C > C++ > Rust > Go > Java > JavaScript > Ruby > P
 
 <br>
 
-### <a id="coding-types-quirks"><span style="color: var(--title)">04.03 QUIRKS</span></a>
+#### <a id="coding-types-quirks"><span style="color: var(--title)">04.03 QUIRKS</span></a>
 ________________
 
 <br>
@@ -300,7 +312,7 @@ They are basically shortcuts to make binary calculation, which makes it easier f
 <br>
 
 
-### <a id="number-systems-computer-memory"><span style="color: var(--title)">05.01 COMPUTER MEMORY</span></a>
+#### <a id="number-systems-computer-memory"><span style="color: var(--title)">05.01 COMPUTER MEMORY</span></a>
 ________________
 
 <br>
@@ -383,11 +395,146 @@ The one that is the most used in other field is the HEXADECIMAL system, for most
 for reference, <span style="color: var(--highlight)">1 byte</span> is <span style="color: var(--highlight)">0000</span> and will range from <span style="color: var(--highlight)">0</span> to <span style="color: var(--highlight)">255</span> (256 total values - the 0 value)
 
 
+<br>
+
+<br>
+
+________
+### <a id="operations"><span style="color: var(--title)">06.00 OPERATIONS</a>
+________________
+
+<br>
+In programming we try to make shortcuts as much as we can. Since we do a lot of mathematical operations, we added the symbols and small shortcuts for certains in (almost) all programming languages.
+
+
+<br><br>
+
+>*note that I will simplify and only present two styles in this manual*
+
+<br>
+
+
+#### <a id="operations-arithmetic"><span style="color: var(--title)">06.01 ARITHMETIC</span></a>
+________________
+
+<br>
+
+when the compiler does operations, it will make descisions on what to evaluate first. It is the computer equivalent of the <span style="color:C9A176">PEDMAS</span> we learnt in school, and works the same way (yay!).
+
+To prioritize or clarify an equation (for you and the computer), you can add parenthesis, but make sure they are not becomming redundant.
+
+Computers usually evaluate : 
+
+1. Parenthesis
+2. Multiplication / Division / Remainder (Mod)
+3. Addition / Substraction
+
+<br>
+
+
+| OPERATION            | OPERATOR | EXAMPLE |   |   |   | OPERATION           | OPERATOR | EXAMPLE |
+|----------------------|----------|---------| - | - | - |---------------------|----------|---------|
+| **Addition**         |       +  | a + b   |   |   |   |  **x = x + a**      |       += | x += a  |
+| **Substraction**     |       -  | a - b   |   |   |   |  **x = x - a**      |       -= | x -= a  |
+| **Multiplication**   |       *  | a * b   |   |   |   |  **x = x * a**      |       *= | x *= a  |
+| **Division**         |       /  | a / b   |   |   |   |  **x = x / a**      |       /= | x /= a  | 
+| **Remainder (mod)**  |       %  | a % b   |   |   |   |  **x = x % a**      |       %= | x %= a  |
+|                      |          |         |   |   |   |                     |          |         |
+|                      |          |         |   |   |   |                     |          |         |
+| **Greater than**     |       >  |  a > b  |   |   |   |  **x = x + 1**      |       ++ | x++     |
+| **Lesser than**      |       <  |  a < b  |   |   |   |  **x = x - 1**      |       -- | x--     |
+| **Greater or Equal** |       >= |  a >= b |   |   |   |  **Equal to**       |      ==  |  a == b |
+| **Lesser or Equal**  |       <= |  a <= b |   |   |   |  **Not Equal to**   |      !=  |  a != b |
+
+
+
+
+<br> 
+
+#### <a id="operations-logic-gates"><span style="color: var(--title)">06.02 LOGIC GATES</span></a>
+________________
+
+<br>
+
+Logic gates are pieces of heardware that <span style="color: var(--highlight)">make the decisions</span> inside of your computer. In esscence, it is the part that will take two informations and compare them through a set of rules to give back a <span style="color: var(--highlight)">boolean result</span>, AKA is this <span style="color: var(--highlight)">true</span> or <span style="color: var(--highlight)">false</span>.
+
+> For more information on the logic gates see <a href="https://www.codeproject.com/articles/237465/understanding-logic-gates"><span style="color: var(--link)">**LOGIC GATES**</a></span>
+
+There are many different logic gates but the most common ones are the <span style="color: var(--highlight)">AND</span>, <span style="color: var(--highlight)">OR</span>, and <span style="color: var(--highlight)">NOT</span> gates. We use them so much that in programming, they have their own symbols.
+
+| GATE  | OPERATOR | EXAMPLE  |
+|-------|----------|----------|
+| AND   |    &&    |  a && b  |
+| OR    |   \|\|   | a \|\| b |
+| NOT   |     !    |  a ! b   | 
+
+Each gate represents a rule that the computer can follow. It is one of the most basic operation in computation.
+
+The <span style="color: var(--highlight)">AND</span> gate is as follow : if A and B are both true, return true, for every other possibility, return false.
+
+| OP 01 | OP 02 | RESULT |
+|-------|-------|--------|
+|   0   |   0   |  false |
+|   0   |   1   |  false |
+|   1   |   0   |  false |
+|   1   |   1   |  true  |
+
+<br>
+
+The <span style="color: var(--highlight)">OR</span> gate is as follow : between A and B, if at least one of them is true, return true. Only if both are false will it return false.
+
+| OP 01 | OP 02 | RESULT |
+|-------|-------|--------|
+|   0   |   0   |  false |
+|   0   |   1   |  true  |
+|   1   |   0   |  true  |
+|   1   |   1   |  true  |
+
+<br>
+
+The <span style="color: var(--highlight)">NOT</span> gate is as follow : if A and B are both false, return true, for every other possibility, return false. It is the exact opposit of the AND gate
+
+| OP 01 | OP 02 | RESULT |
+|-------|-------|--------|
+|   0   |   0   |  true  |
+|   0   |   1   |  false |
+|   1   |   0   |  false |
+|   1   |   1   |  false |
+
+<br>
+
+For the logic gates, the compiler will also ignore certain parts of a condition to accelerate the execution when possible.
+
+For example :
+
+```Java
+package asha9236.example;
+
+public class Main {
+    public static void main (String[] args) {
+        int num1 = 2;
+        int num2 = 5;
+        int num3 = -1;
+
+        if (num1 < num2 || num2 > num3) { //this reads as 'if num1 is smaller than num2 OR, if num2 is bigger than num3
+            System.out.print("TRUE!");
+        } else { //if the 'if' conditions are false, then to this : 
+            System.out.print("FALSE!");
+        }
+    }
+}
+```
+
+In this example, the compiler will be able to skip reading the condition 'num2 > num3' since : 
+1. an OR gate only needs one of the statements A and B to be true
+2. the statement A (num1 < num2) is already true
+
+=> Therefore, there is no need to see if the statement B is true as well
 
 <br> <br>
 
 ________
-### <a id="us"><span style="color: var(--title)">06.00 US</a></span>
+### <a id="us"><span style="color: var(--title)">07.00 US</a></span>
 ________________
 
 <br>
@@ -424,7 +571,7 @@ The only thing you need to change is the GroupId : change it to your GitHub hand
 <br>
 
 ________
-### <a id="data-types"><span style="color: var(--title)">07.00 DATATYPES & NULL</a></span>
+### <a id="data-types"><span style="color: var(--title)">08.00 DATATYPES & NULL</a></span>
 ________________
 
 <br>
@@ -438,7 +585,7 @@ Java, like every programming language can do automatic conversions, which is whe
 
 <br>
 
-#### <a id="data-types-primitive"><span style="color: var(--title)">07.01 PRIMITIVE</a></span>
+#### <a id="data-types-primitive"><span style="color: var(--title)">08.01 PRIMITIVE</a></span>
 ---------------------
 <br>
 
@@ -459,6 +606,8 @@ It is important to know the basic minimum and maximum value for your datatypes f
 In your ide, it will look like this :
 
 ```java
+package asha9236.example;
+
 public class Main {
     public static void main (String[] args) {
         int num1 = 3;
@@ -475,7 +624,7 @@ public class Main {
 
 <br>
 
-#### <a id="data-types-non-primitive"><span style="color: var(--title)">07.02 NON-PRIMITIVE</a></span>
+#### <a id="data-types-non-primitive"><span style="color: var(--title)">08.02 NON-PRIMITIVE</a></span>
 ---------------------
 <br>
 
@@ -489,6 +638,8 @@ non-primitive data types also contain methods which can be used to modify them (
 <br>
 
 ```java
+package asha9236.example;
+
 public class Main {
     public static void main (String[] args) {
         String name = "John Doe";
@@ -506,7 +657,7 @@ public class Main {
 
 <br>
 
-#### <a id="data-types-null"><span style="color: var(--title)">05.03 NULL</a></span>
+#### <a id="data-types-null"><span style="color: var(--title)">08.03 NULL</a></span>
 ---------------------
 <br>
 
