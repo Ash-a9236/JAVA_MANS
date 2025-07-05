@@ -83,7 +83,7 @@ In Java (and most other OOP languages) the standards are : <br> <br>
 <br> <br>
 
 ________
-#### <a id="ides"><span style="color: var(--title)">03.00 INTEGRATED DEVELOPMENT ENVIRONMENT</a>
+### <a id="ides"><span style="color: var(--title)">03.00 INTEGRATED DEVELOPMENT ENVIRONMENT</a>
 ________________
 
 <br>
@@ -318,6 +318,28 @@ Your computer has two memories : the <span style="color: var(--highlight)">RAM</
 
 For obvious reasons, your computer cannot speak 'human'. Since the beginning of computing, we tried to make a numbering system that could work and that lead to the fewest possible errors. After quite a bit of searching, we settled down on a 2-digit system which we called 'binary'. Your computer can therefore only understand two states : there is electricity (on) and there is no electricity (off), which we directly translate to 0s and 1s called <span style="color: var(--highlight)">bits</span>
 
+<br><br>
+
+A bit more on computer hardware (bonus info) :
+
+Computers are the hardware of a computer system. There are different types of computers such as mobile, personal, integrated, or supercomputer.
+
+All types of computers are made of multiple devices that are also refered to as hardware, such as CPU, SSDs, screen, keyboard, etc.
+
+If the hardware is <span style="color: var(--highlight)">inside</span> of the computer, it is a <span style="color: var(--highlight)">logical unit</span>. If it is <span style="color: var(--highlight)">outside</span>, it is a <span style="color: var(--highlight)">peripheral device</span>
+
+| UNIT TYPE | REAL NAME ABV | REAL NAME | USE |
+|-----------|---------------|-----------|-----|
+| INPUT     |      -        |  -        | input devices are a family of devices that are used to give information to the computer. They can range from keyboards to USB drives or even touch screens and microphones |
+| OUTPUT    |     -          |    -      | output devices are what makes the result of the computer's actions available back to the user. It can be a screen, audio, haptic feedback, etc. |
+| MEMORY   | RAM <br> <br> SSD  | Rapid (Random) Access Memory <br> <br> Solid State Drive | It is the primary memory of the computer. Usually displayed in GB, you only need 4-8GB of RAM to have a good functionning computer. It determines how many things your computer can do at once. <br> <br> The SSD is the secondary storage unit of the computer, aka the archive system. It can come in the computer but can be expanded through USB, other Hard Drives or DVDs. They are usually labelled with a letter in the computer's explorer such as C:|
+| PROCESSING | CPU <br> <br> ALU | Central Processing Unit <br> <br> Arithmetic Logical Unit | The CPU is the brain of the computer. It performs the instructions given from the inputs to give back outputs while also coordinating the computer itself. CPUs work in cycles (Fetch, Decode, Execute) mesured in Hertz (Hz). <br> The ALU is part of the CPU and performs the calculations and the decisions for the CPU. It also contains the logic gates. |
+
+Computers <span style="color: var(--highlight)">process data</span> through sets of instructions called <span style="color: var(--highlight)">computer programs</span>, also called <span style="color: var(--highlight)">software</span>.
+
+To make the difference between what is hardware vs what is software, remember this : *if you can slap it or yeet it at your ex, its hardware*. For example, you can slap a screen, but you cannot slap chrome.
+
+
 <br>
 
 #### <a id="number-systems-binary"><span style="color: var(--title)">05.02 BINARY</span></a>
@@ -414,7 +436,7 @@ ________________
 
 <br>
 
-when the compiler does operations, it will make descisions on what to evaluate first. It is the computer equivalent of the <span style="color:C9A176">PEDMAS</span> we learnt in school, and works the same way (yay!).
+when the compiler does operations, it will make descisions on what to evaluate first. It is the computer equivalent of the <span style="color: var(--highlight)">PEDMAS</span> we learnt in school, and works the same way (yay!).
 
 To prioritize or clarify an equation (for you and the computer), you can add parenthesis, but make sure they are not becomming redundant.
 
