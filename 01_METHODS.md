@@ -246,7 +246,7 @@ Process finished with exit code 0
 
 <br>
 
-#### <a id="console-output"><span style="color: var(--title)">02.01 CONSOLE OUTPUT</span></a>
+#### <a id="console-output"><span style="color: var(--title)">02.02 CONSOLE OUTPUT</span></a>
 ________________
 
 <br>
@@ -282,6 +282,144 @@ Line : 14 - 116.597746
 Process finished with exit code 0
 ```
 
+<br>
+
+#### <a id="console-input"><span style="color: var(--title)">02.03 CONSOLE INPUT</span></a>
+________________
+
+<br>
+
+The console can also be use to make applications and to therfore get external information into your code.
+It is made through the <span style="color: var(--highlight)">Scanner</span> class.
+
+```Java
+package asha9236.example;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner console = new Scanner(System.in); //creating the scanner with the name 'console' & telling it to look at the console through 'System.in'
+
+        System.out.println("Hello !");
+        System.out.print("Please input your name => "); 
+        String name = console.nextLine(); //will never go further than here until something is inputted though the console
+        System.out.printf("Hello %s! ", name);
+    }
+}
+
+
+```
+
+Console until line 11 : 
+
+```Console
+Hello !
+Please input your name => 
+```
+
+Console after input :
+
+```Console
+Hello !
+Please input your name => ash-a9236
+Hello ash-a9236! 
+
+Process finished with exit code 0
+```
+
+The <span style="color: var(--highlight)">Scanner class</span> has multiple methods that can be used to get multiple types of input.
+They include : 
+
+| METHOD        | INPUT REQUIRED |
+| --------------| ---------------|
+| .next()       | String until a space is encountered|
+| .nextLine()   | String until a next line (enter) is encountered |
+| .nextInt()    | int |
+| .nextDouble() | double |
+| .nextFloat()  | float |
+
+BUT! Be careful : if you request an int through .nextInt() and you try to pass a String it will return an error and exit the code completly : 
+
+```java
+package asha9236.example;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner console = new Scanner(System.in);
+
+        System.out.println("Hello !");
+        System.out.print("Please input your name => ");
+        int name = console.nextInt(); //change the input type to int
+
+        System.out.printf("Hello %d! ", name);
+    }
+}
+```
+
+```Console
+Hello !
+Please input your name => ash-a9236
+
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:964)
+	at java.base/java.util.Scanner.next(Scanner.java:1619)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2284)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2238)
+	at asha9236.example.Main.main(Main.java:11)
+
+Process finished with exit code 1
+```
+
+
+<br>
+
+#### <a id="console-errors"><span style="color: var(--title)">02.04 CONSOLE ERRORS</span></a>
+________________
+
+<br>
+
+As you could see in the last example, when something goes wrong with your code during <span style="color: var(--highlight)">runtime</span>, the code will complelty stop and throw an exception.
+
+<span style="color: var(--highlight)">Exception</span> are the way that your IDE shows you an error. They show : 
+* the <span style="color: var(--highlight)">type</span> of error
+* <span style="color: var(--highlight)">where</span> the error happen
+and sometimes 
+* <span style="color: var(--highlight)">how to fix it</span>
+
+This allows you to debug your code more efficiently, as long as you read the exception correctly.
+
+In last example, the error was : 
+
+```Console
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:964)
+	at java.base/java.util.Scanner.next(Scanner.java:1619)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2284)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2238)
+	at asha9236.example.Main.main(Main.java:11)
+
+Process finished with exit code 1
+```
+
+In this, the IDE tells you :
+1. the exception is an <span style="color: var(--highlight)">InputMismatchException</span>, therefore there is a mismatch between what the IDE expected the user to input, and what the user actually inputed
+2. it happened at the <span style="color: var(--highlight)">line 11</span> of the main method in the Main class : all the line at first don't matter, only the last line with your groupId (in my case asha9236), matters because up until then it is not your code but rather the code that makes Java.
+3. The <span style="color: var(--highlight)">process exit</span>, which indicated <span style="color: var(--highlight)">1</span>, AKA, an <span style="color: var(--highlight)">expected potential error</span>
+
+The <span style="color: var(--highlight)">process exit</span> has 3 main values : 
+
+| VALUE | MEANING |
+|-------|---------|
+| 0     | good termination <br> everything went well |
+| Positive | wrongfull termination but known exception <br> Something went wrong but we know what and why |
+| Negative | completly wrongfull termination <br> worst exit code : something went wrong and we don't know what, where or how |
+
+
+
+Sometimes, there is an error but the IDE <span style="color: var(--highlight)">doesn't catch it</span>. Those are called <span style="color: var(--highlight)">logical errors</span> and cannot be caught unless you manually go through your code. An example of this would be doing 2+2 and expecting 4, but the IDE gives you back 22 : there is no error for the IDE but clearly one in the logic.
 
 
 

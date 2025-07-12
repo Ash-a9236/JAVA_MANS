@@ -426,10 +426,6 @@ In programming we try to make shortcuts as much as we can. Since we do a lot of 
 
 <br><br>
 
->*note that I will simplify and only present two styles in this manual*
-
-<br>
-
 
 #### <a id="operations-arithmetic"><span style="color: var(--title)">06.01 ARITHMETIC</span></a>
 ________________
