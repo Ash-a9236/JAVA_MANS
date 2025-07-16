@@ -381,7 +381,7 @@ ________________
 
 <br>
 
-As you could see in the last example, when something goes wrong with your code during <span style="color: var(--highlight)">runtime</span>, the code will complelty stop and throw an exception.
+As you could see in the last example, when something goes wrong with your code during <span style="color: var(--highlight)">runtime</span>, <span style="color: var(--highlight)">the code will complelty stop and throw an exception</span>.
 
 <span style="color: var(--highlight)">Exception</span> are the way that your IDE shows you an error. They show : 
 * the <span style="color: var(--highlight)">type</span> of error
@@ -406,7 +406,7 @@ Process finished with exit code 1
 
 In this, the IDE tells you :
 1. the exception is an <span style="color: var(--highlight)">InputMismatchException</span>, therefore there is a mismatch between what the IDE expected the user to input, and what the user actually inputed
-2. it happened at the <span style="color: var(--highlight)">line 11</span> of the main method in the Main class : all the line at first don't matter, only the last line with your groupId (in my case asha9236), matters because up until then it is not your code but rather the code that makes Java.
+2. it happened at the <span style="color: var(--highlight)">line 11</span> of the main method in the Main class : all the line at first don't matter, only the last line with your groupId (in my case asha9236), matters because up until then it is not your code but rather the code that makes Java. The way to recognize it is if it starts with java.[something...].[the class you are using], which in our case is 'java.base./java.util.Scanner'
 3. The <span style="color: var(--highlight)">process exit</span>, which indicated <span style="color: var(--highlight)">1</span>, AKA, an <span style="color: var(--highlight)">expected potential error</span>
 
 The <span style="color: var(--highlight)">process exit</span> has 3 main values : 
@@ -415,13 +415,60 @@ The <span style="color: var(--highlight)">process exit</span> has 3 main values 
 |-------|---------|
 | 0     | good termination <br> everything went well |
 | Positive | wrongfull termination but known exception <br> Something went wrong but we know what and why |
-| Negative | completly wrongfull termination <br> worst exit code : something went wrong and we don't know what, where or how |
+| Negative | completly wrongfull and unclean termination <br> worst exit code : something went wrong and we don't know what, where or how <br> with this termination you need to be careful (later on with more advanced code) : the code exited unsafely so some 'code stuff' like threads might still be active or unclosed |
 
 
 
 Sometimes, there is an error but the IDE <span style="color: var(--highlight)">doesn't catch it</span>. Those are called <span style="color: var(--highlight)">logical errors</span> and cannot be caught unless you manually go through your code. An example of this would be doing 2+2 and expecting 4, but the IDE gives you back 22 : there is no error for the IDE but clearly one in the logic.
 
+Basically, there are 3 types of errors : 
 
+| TYPE      | ERROR |
+|-----------|-------|
+| Compile-time | Small errors that will be caught by the IDE. They are often called syntax errors <br> i.e. int a = 6  -> ';' expected 1:9 <br> => missing semicolon at the end of the statement |
+| Runtime   | Errors that happen when the code runs, they sometime get caught by the IDE before compilation, but they often do not <br> i.e. int a = 6 / 0; ->  Exception in thread "main" java.lang.ArithmeticException: / by zero at asha9236.example.Main.main(File.java:14) <br> => impossible division since it was by 0 |
+| Logic     | Errors that happen when you expect a certain result and the computer gives you another <br> (examples are too long)|
+
+
+<br> <br>
+
+________
+### <a name="access-modifiers"><span style="color: var(--title)">03.00 ACCESS MODIFIERS</span></a>
+________________
+
+<br>
+
+As you might have caught in code examples before, the keyword 'public' appears quite often in <span style="color: var(--highlight)">method definitions (headers)</span>. <span style="color: var(--highlight)">public</span> is an <span style="color: var(--highlight)">access modifier</span>, which allows everyone to see what is inside the method.
+
+<span style="color: var(--highlight)">Access modifiers</span> are keywords which determine <span style="color: var(--highlight)">who</span> can 'see' and 'use' the method. 
+
+The best way to write your code is to give as little access as necessary (to enfore the black box).
+
+| MODIFIER  | UML SIGN | NOTE |
+|-----------|----------|------|
+| public    | +        | the <span style="color: var(--highlight)">most permissive</span> access modifier. Everyone can have access to those methods |
+| protected | #        | a small step over private : allows all the subclasses to see the methods as well <br> it is mostly used in the case of inheritance (parent-child relationships) |
+| default   |          | It allows only those of the same package to see each other. <br>Note that no keyword is needed to implement it |
+| private   | -        | The <span style="color: var(--highlight)">less permisive</span> access modifier. Only those in the same class can see and use the methods. <br>It is often used for data fields |
+
+Access modifiers can be seen by : 
+
+| MODIFIER  | UML SIGN | SAME CLASS | PACKAGE SUBCLASS | PACKAGE NON-SUBCLASS | DIFF PACK SUBCLASS | DIFF PACK NON-SUBCLASS |
+|-----------|----------|------------|------------------|----------------------|--------------------|------------------------|
+| public    | +        | Y          | Y                | Y                    | Y                  | Y                      |
+| protected | #        | Y          | Y                | Y                    | Y                  | N                      |
+| default   |          | Y          | Y                | Y                    | N                  | N                      |
+| private   | -        | Y          | N                | N                    | N                  | N                      |
+
+
+
+<br> <br>
+
+________
+### <a name="static-vs-nonstatic"><span style="color: var(--title)">04.00 STATIC VS NON-STATIC</span></a>
+________________
+
+<br>
 
 
 </span>
