@@ -451,6 +451,8 @@ The best way to write your code is to give as little access as necessary (to enf
 | default   |          | It allows only those of the same package to see each other. <br>Note that no keyword is needed to implement it |
 | private   | -        | The <span style="color: var(--highlight)">less permisive</span> access modifier. Only those in the same class can see and use the methods. <br>It is often used for data fields |
 
+<br>
+
 Access modifiers can be seen by : 
 
 | MODIFIER  | UML SIGN | SAME CLASS | PACKAGE SUBCLASS | PACKAGE NON-SUBCLASS | DIFF PACK SUBCLASS | DIFF PACK NON-SUBCLASS |
@@ -469,6 +471,22 @@ ________
 ________________
 
 <br>
+
+On the main method header there is the keyword 'static'. Static is simply there to define <span style="color: var(--highlight)">to who does this method belongs</span>. 
+When you create a class (or an object), you want to create methods that either <span style="color: var(--highlight)">belong to the class itself</span> OR <span style="color: var(--highlight)">belong to an instance of the class</span>, AKA an object.
+To put it more simply, you can create a class 'Cat' and have methods, that are 'owned' by the Cat class but can be used by whoever wants it, while on the opposite you can have methods that only belong to specific cats (i.e. orangeCat, blackCat, etc.) and that can only be used by those cats.
+
+| -          | BELONGS TO | CAN USE | USED BY | NOTE |
+|------------|------------|---------|---------|------|
+| static     | An instance of a class (object)  | static | static <br>non static| |
+| non-static | The class itself | static <br>non static | 
+
+
+
+
+
+
+
 
 
 </span>
