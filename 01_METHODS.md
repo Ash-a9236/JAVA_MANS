@@ -383,6 +383,8 @@ ________________
 
 As you could see in the last example, when something goes wrong with your code during <span style="color: var(--highlight)">runtime</span>, <span style="color: var(--highlight)">the code will complelty stop and throw an exception</span>.
 
+Console errors are informations about how, where and why the error happen.
+
 <span style="color: var(--highlight)">Exception</span> are the way that your IDE shows you an error. They show : 
 * the <span style="color: var(--highlight)">type</span> of error
 * <span style="color: var(--highlight)">where</span> the error happen
@@ -442,7 +444,7 @@ As you might have caught in code examples before, the keyword 'public' appears q
 
 <span style="color: var(--highlight)">Access modifiers</span> are keywords which determine <span style="color: var(--highlight)">who</span> can 'see' and 'use' the method. 
 
-The best way to write your code is to give as little access as necessary (to enfore the black box).
+The best way to write your code is to give as little access as necessary (to enfore the black box). Basically, if a method doesn't need to be public, make it protected. If it doesn't need to be protected, make it private.
 
 | MODIFIER  | UML SIGN | NOTE |
 |-----------|----------|------|
@@ -472,14 +474,16 @@ ________________
 
 <br>
 
-On the main method header there is the keyword 'static'. Static is simply there to define <span style="color: var(--highlight)">to who does this method belongs</span>. 
+On the main method header there is the keyword 'static'. Static, or the absence of it (no keyword) is simply there to define <span style="color: var(--highlight)">to who does this method belongs</span>.
+
 When you create a class (or an object), you want to create methods that either <span style="color: var(--highlight)">belong to the class itself</span> OR <span style="color: var(--highlight)">belong to an instance of the class</span>, AKA an object.
-To put it more simply, you can create a class 'Cat' and have methods, that are 'owned' by the Cat class but can be used by whoever wants it, while on the opposite you can have methods that only belong to specific cats (i.e. orangeCat, blackCat, etc.) and that can only be used by those cats.
+
+To put it more simply, you can create a class 'Cat' and have methods, that are 'owned' by the Cat class but can be used by whoever wants it, while on the opposite you can have methods that only belong to specific cats (i.e. orangeCat, blackCat, etc.) and that can only be used by those cats separately.
 
 | -          | BELONGS TO | CAN USE | USED BY | NOTE |
 |------------|------------|---------|---------|------|
-| static     | An instance of a class (object)  | static | static <br>non static| |
-| non-static | The class itself | static <br>non static | 
+| static     | An instance of a class (object)  | static | static <br>non static| - the method is always in the RAM <br><br>- less memory used (since its fixed 1 time) <br><br>- to call you need Class.methodName(); <br><br>- Compile time / early binding <br>no overriding (since early binding) |
+| non static | The class itself | static <br>non static | non static | - the method is not fixed in the RAM <br><br>- more memory used <br><br>- to call you need object.methodName(); <br><br>- Runtime / dynamic binding <br><br>- can be overriden
 
 
 
