@@ -31,7 +31,7 @@ TABLE OF CONTENTS <br> <br>
 [<span style="color: var(--link)">05 . . Return Types</span>](#return-types) <br> 
 [<span style="color: var(--link)">06 . . Naming</span>](#naming) <br> 
 [<span style="color: var(--link)">07 . . Input</span>](#input) <br>
-[<span style="color: var(--link)">07 . . Documentation</span>](#documentation) <br>
+[<span style="color: var(--link)">08 . . Documentation</span>](#documentation) <br>
 
 <br> <br>
 
@@ -56,10 +56,13 @@ public class Main {
     public static void main (String[] args) {
         makeSound();
         addNums(5, 7); //same class method call
+	System.out.println(addNums(5, 7)); //calling the method again but printing the result this time
 
         String name = "hello";
+	System.out.println(name);
         name.toUpperCase(); //calling the toUpperCase method
         //name = "HELLO" now
+	System.out.println(name);
     }
 
     public static void makeSound () {
@@ -71,6 +74,17 @@ public class Main {
     }
 
 }
+```
+
+Output
+
+```console
+Bing!
+12
+hello
+HELLO
+
+Process finished with exit code 0
 ```
 
 <br>
@@ -480,6 +494,7 @@ When you create a class (or an object), you want to create methods that either <
 
 To put it more simply, you can create a class 'Cat' and have methods, that are 'owned' by the Cat class but can be used by whoever wants it, while on the opposite you can have methods that only belong to specific cats (i.e. orangeCat, blackCat, etc.) and that can only be used by those cats separately.
 
+
 | -          | BELONGS TO | CAN USE | USED BY | NOTE |
 |------------|------------|---------|---------|------|
 | static     | An instance of a class (object)  | static | static <br>non static| - the method is always in the RAM <br><br>- less memory used (since its fixed 1 time) <br><br>- to call you need Class.methodName(); <br><br>- Compile time / early binding <br>no overriding (since early binding) |
@@ -487,6 +502,81 @@ To put it more simply, you can create a class 'Cat' and have methods, that are '
 
 
 
+<br> <br>
+
+________
+### <a name="return-types"><span style="color: var(--title)">05.00 RETURN TYPES</span></a>
+________________
+
+<br>
+
+All methods need to have what we call a <span style="color: var(--highlight)">return parameter</span>, which is basically the <span style="color: var(--highlight)">output</span> of the method. To decide which return type you want, you can ask yourself 'what do I want from this method?'.
+
+Returns of methods can be of any data types, wether it's a primary, non-primary, or even generic data types, the only rule is that it has to match between the header and the return statement.
+All return types need to have the keyword <span style="color: var(--highlight)">return</span> + the value at the end or a breaking point of a method, except for the <span style="color: var(--highlight)">void</span> return type (you do not explecitly need to declare it but you can just write 'return;' without any value attached to it). Void means that the method will essentitally return nothing, which we usually use to print information on the screen.
+
+The return keyword signifies the exit of the method to the compiler.
+
+
+```java
+package asha9236.example;
+
+public class Main {
+	public static void main (String[] args) {
+	//main method
+	}
+
+	public static void makeSound () {
+		System.out.println("Bing!");
+		return; //not necessary but can be used for clarity
+	}
+	
+	public int addNums (int a, int b) { //return type : int
+		int c = a + b;
+		return c; //matches return data type (int)
+		//we could also simplify the method by simply writing 'return a + b;' because it still returns an int
+	}
+	
+	public static String printName (String firstName, String lastName) { //return type : String
+		String fullName = firstName.substring(0, 1).toUpperCase() + firstName.substring(1).toLowerCase(); //capitalize the first letter and then lowercase the rest of the name
+		fullName += " " + lastName.substring(0, 1).toUpperCase() + lastName.substring(1).toLowerCase(); //adding the last name with the first letter capitalized
+		return fullName;
+
+		/* ANOTHER WAY TO WRITE THIS METHOD
+		firstName += firstName.substring(0, 1).toUpperCase() + firstName.substring(1).toLowerCase();
+		fullName += lastName.substring(0, 1).toUpperCase() + lastName.substring(1).toLowerCase(); 
+		return firstName + " " + lastName;
+		*/
+	}
+}
+```
+
+
+<br> <br>
+
+________
+### <a name="naming"><span style="color: var(--title)">06.00 NAMING</span></a>
+________________
+
+<br>
+
+
+<br> <br>
+
+________
+### <a name="inputs"><span style="color: var(--title)">07.00 INPUTS</span></a>
+________________
+
+<br>
+
+
+<br> <br>
+
+________
+### <a name="documentation"><span style="color: var(--title)">08.00 DOCUMENTATION</span></a>
+________________
+
+<br>
 
 
 
