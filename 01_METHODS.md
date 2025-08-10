@@ -212,13 +212,13 @@ The most difficult print to handle is <span style="color: var(--highlight)">Syst
 |  \n  | will return to the next line <br> effective equivalent to an empty System.out.println(); |
 |  \t  | horizontal tab |
 |  \"  | inserting double quotes |
-|  \\  | inserting a backslash |
+|  \\\  | inserting a backslash |
 |      |            |
 | %b   | Boolean |
 | %d   | int placeholder |
 | %s   | String |
 | %c   | char |
-| %f   | double of float |
+| %f   | double or float |
 
 For example :
 
@@ -560,6 +560,47 @@ ________________
 
 <br>
 
+As you might have noticed, in programming we love to have very direct and no-brainers names for everything. This goes for every programming language, concept or even when you, the programmer, name your methods or variables.
+
+In java, all the naming is done in <span style="color: var(--highlight)">camel case</span>, which means that : 
+* the first word is all in lower case
+* all the following words have their first letter capitalized
+* no space between the words
+
+basicallyThisIsASentenceInCamelCase
+camelCase
+printName
+showMeYourCat
+sendMeAPictureOfYourPetForExtraBrowniePoints
+
+You must note that all the final / unchaning variables (all the constants), they are all capitalized to indicate their final state (if the name contains multiple words, you can use snake case to make is clearer)
+
+MAX_COUNT
+PI
+MIN
+MAX_ATTEMPS
+E
+
+Furthermore, when you name a method or a variable, it should be as straight to the point as you can.
+
+| GOOD                              | BAD                               |
+|-----------------------------------|-----------------------------------|
+| printName                         | willPrintTheFullNameOfTheUser     |
+| sum                               | addsTwoIntegersTogether           |
+| checkISBN                         | checksIfTheISBNIsConform          |
+| firstName                         | theFirstNameOfMainUser            |
+
+
+Bonus : 
+
+There are other naming conventions such as : 
+* <span style="color: var(--highlight)">pascal</span> case, which is basically camel case but the first word is also capitalized (ThisIsPascalCase, thisIsCamelCase)
+* <span style="color: var(--highlight)">kebab</span> case, where you use a hyphen to separate the words (this-is-kebab-case)
+* <span style="color: var(--highlight)">snake</span> case, where you use an underscore instead of a hyphen (this_is_snake_case, this_is_not_kebab_case)
+
+
+
+
 
 <br> <br>
 
@@ -569,6 +610,33 @@ ________________
 
 <br>
 
+In essence, methods are like the functions you might have seen in basic algebra. You 'input x' and get y as an output of the function. For us, the ys are the returns, and the xs are the method inputs.
+
+The input of your method are located in the parenthesis section of the header. They need to be formatted this way : 
+* input type (int, double, String, int[], etc.)
+* input name (fName, age, tryCount, etc.)
+
+The inputs you put in your methods header will always be required to be filled when you call that method. For example, if you ask for num1, num2 and num3 in your base method definition, everytime you call the method, you will need to 'pass on' 3 numbers.
+
+```java
+package asha9236.example;
+
+public class Main {
+	public static void main (String[] args) {
+	    addNums(2, 3, 4); //9
+
+        int num = 4;
+        int secondNum = 7;
+        
+        addNums(num, secondNum, num);
+	}
+
+	public static int addNums (int num1, int num2, int num3) {
+		return num1 + num2 + num3; //15
+	}
+	
+}
+```
 
 <br> <br>
 
@@ -578,9 +646,89 @@ ________________
 
 <br>
 
+Through the code examples, you might have seen what we call 'comments' that I added to clarify what each line / action was doing. With methods, we usually do the same to explain the entire method through what we call 'documentation'.
+
+To add documentation you can simply write '/**' and the IDE should complete the rest for you. The IDE will add the necessary information for you to fill :
+* a small sentence that describes the method
+* each input parameter and what they do
+* what the method returns
+
+for example (from one of my early projects, do not worry about figuring out what everything means or how they connect exactly + I would advise you to copy-paste it in a java file so you can see exactly how it shows)
+
+```java
+package asha9236.example;
+
+public class Main {
+	public static void main (String[] args) {}
+
+    /**
+     * checks if an ISBN is in a valid format
+     * @param inputISBN the input isbn
+     * @return the isbn if it is valid
+     * @throws InvalidISBNException the exception thrown when the ISBN is not valid
+     */
+    protected String ISBNChecker(String inputISBN) throws InvalidISBNException {
+        inputISBN = inputISBN.replace("-", "");
+        if (inputISBN.length() != 13 && inputISBN.length() != 10) {
+            throw new InvalidISBNException("ISBN must be exactly 10 or 13 characters long without dashes.");
+        }
+        for (char c : inputISBN.toCharArray()) {
+            if (Character.isLetter(c)) {
+                throw new InvalidISBNException("ISBN should not contain letters.");
+            }
+        }
+        return inputISBN;
+    }
+
+    /**
+     * displays the same type of error messages throughout the whole system
+     * @param message the input message to be displayed
+     */
+    public void setErrorMessage (String message) {
+        System.out.println("[ERROR : " + message + "]");
+    }
+
+    /**
+     * changes the name of the logged-in user
+     * @param console the sytsem console
+     */
+    public void settingsChangeName (Console console) { 
+        clearScreenSequence(console);
+        appHeader();
+        System.out.println(messages.getString("prompt.newName"));
+        String newName = console.readLine();
+        System.out.println(newName + "  " + messages.getString("prompt.choice") + "?");
+        String ans = console.readLine().toUpperCase().charAt(0) + "";
+
+        if (ans.equals("Y")) {
+            model.changeName(newName);
+        } else {
+            view.setErrorMessage(messages.getString("error.message.operationAborted"));
+            currentState = MenuState.SETTINGS;
+        }
+        currentState = MenuState.SETTINGS;
+    }
 
 
+    /**
+     * Check if the student already borrowed the book by its ID
+     * @param borrowedBooks the borrowed books list of the student
+     * @param isbn the isbn of the book to be borrowed
+     * @return true if the book is already borrowed, false if not
+     */
+    private boolean isAlreadyBorrowed (ArrayList<Book> borrowedBooks, String isbn) {
+        for (Book borrowedBook : borrowedBooks) {
+            if (borrowedBook.getISBN().equals(isbn)) {
+                System.out.println(LocalizationManager.getMessage("book.owned"));
+                return true;
+            }
+        }
+        return false;
+    }
+}
+```
 
+Remember that while your code might make sense to you, at the moment you write it, it often doesn't automatically make sense to anyone else or even future you. Documentation and comments are here to help clarify your code to any other programmer or onlooker.
 
 
 </span>
