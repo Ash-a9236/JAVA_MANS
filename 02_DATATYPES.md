@@ -36,6 +36,11 @@ ________________
 
 <br>
 
+As I mentionned before, JVM (Java Virtual Machine) and compiler are not interpreter. Basically, <span style="color: var(--highlight)">they cannot assume the data type of a variable as would an interpreter</span>. This means that you, the programmer, needs to <span style="color: var(--highlight)">define everything</span> for the compiler.
+
+Through this sheet, we will see the different data types, how they work together
+
+
 
 
 </span>
