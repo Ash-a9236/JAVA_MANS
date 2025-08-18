@@ -38,9 +38,32 @@ ________________
 
 As I mentionned before, JVM (Java Virtual Machine) and compiler are not interpreter. Basically, <span style="color: var(--highlight)">they cannot assume the data type of a variable as would an interpreter</span>. This means that you, the programmer, needs to <span style="color: var(--highlight)">define everything</span> for the compiler.
 
-Through this sheet, we will see the different data types, how they work together to help perform different operations.
+Identifying a data type is your way of saying to your compiler 'this is this, and you can do action 1, action 2, and action 3 with it'.
+
+Data types come into 2 types (technically 3, but we will see the generics later): primary and non-primary data types. Primary data types are what we call 'directly referenced in memory' and are data types to which you can perform basic opetations to. At the opposite, non-primary, or 'reference data types' are classes, so actual objects that need built-in methods (methods that are predefined within Java, but still methods) to perfom the same actions as the primary data types, and more. 
+
+The way to differencitate the primary from the reference data types is : 
+
+| PRIMARY      | REFERENCE     |
+|--------------|---------------|
+| declaration in all lowercase (i.e. int, double) | declaration with the first letter capitalized (i.e. String) |
+| cannot call built-in methods (i.e. int.toUpperCase() is invalid) | has build-in methods (i.e. randomString.toUpperCase()) |
+| prints the value automatically | need to call the toString() method to print, if not, will print the memory address |
+
+
+You need to note that each primary data type has its own 'wrapper class', which basically mean, its own non-primary data type equivalent. They are here to perform operations when the primary data type fails, in a few edge cases. 
+
+//Through this sheet, we will see the different data types, how they work together to help perform different operations.
 
 
 
+
+
+<br>
+
+#### <a id="console-print"><span style="color: var(--title)">02.01 CONSOLE PRINT</span></a>
+________________
+
+<br>
 
 </span>
