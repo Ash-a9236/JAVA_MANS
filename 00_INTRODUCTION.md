@@ -241,18 +241,18 @@ When we are talking about high level programming languages, we mean languages th
 The furtest you go from the hardware, the more abstraction you add to your program. You will see that concepts from the first few ideas we will go through are very close to what the machine does and how it handles basic computation. As we go, we will remove ourselves gradually from me & the machine, and the questions of 'how will the computer understand this?' and slowly go to more abstract concepts.
 
 
-|            | HIGH | LOW  |
-|------------|------|------|
-| **Fridenly to** | Programmer | Machine|
-| **Understandable** | Easy | Not really |
-| **Readability** | Easy | Complex |
-| **Debugging** | Easy | Complex |
-| **Maintenance** | Easy | Complex |
-| **Portable** | Yes | No |
-| **Runs on** | Anything | Machine-dependent |
+|                                | HIGH                   | LOW  |
+|--------------------------------|------------------------|------|
+| **Fridenly to**                | Programmer             | Machine|
+| **Understandable**             | Easy                   | Not really |
+| **Readability**                | Easy                   | Complex |
+| **Debugging**                  | Easy                   | Complex |
+| **Maintenance**                | Easy                   | Complex |
+| **Portable**                   | Yes                    | No |
+| **Runs on**                    | Anything               | Machine-dependent |
 | **Translation to binary with** | Compiler / Interpreter | Assembler |
-| **Used** | Widely | Not common |
-| **Execution speed** | Slow | Fast |
+| **Used**                       | Widely                 | Not common |
+| **Execution speed**            | Slow                   | Fast |
 
 
 A few languages by levels, lowest to highest :

@@ -53,17 +53,53 @@ The way to differencitate the primary from the reference data types is :
 
 You need to note that each primary data type has its own 'wrapper class', which basically mean, its own non-primary data type equivalent. They are here to perform operations when the primary data type fails, in a few edge cases. 
 
-//Through this sheet, we will see the different data types, how they work together to help perform different operations.
-
-
+| PRIMARY  | WRAPPER     |
+|----------|-------------|
+| int      | Integer()   |
+| double   | Double()    |
+| float    | Float()     |
+| char     | Character() |
 
 
 
 <br>
 
-#### <a id="console-print"><span style="color: var(--title)">02.01 CONSOLE PRINT</span></a>
+________
+### <a name="primary-datatypes"><span style="color: var(--title)">02.00 PRIMARY DATATYPES</span></a>
 ________________
 
 <br>
+
+As mentionned in the introduction, primary datatypes are directly referenced, which basically means they are directly translated to binary in your computer. In the INTRODUCTION.md sheet, you might remeber the table I gave you : 
+
+| NAME | SYMBOL | WRAPPER CLASS | SIZE | MIN VALUE | MAX VALUE | 
+|------|--------|---------------|------|-----------|-----------|
+| integer | <span style="color: var(--highlight)">int</span> | Integer | 4 bytes | -2 147 483 648 | 2 147 483 647 |
+| double | <span style="color: var(--highlight)">double</span> | Double | 8 bytes | -1.79769313486232 e 308 | 1.79769313486232 e 308 |
+| float | <span style="color: var(--highlight)">float</span> | Float | 4 bytes | -3.402823 e 38 | 3.402823 e 38 |
+| boolean | <span style="color: var(--highlight)">bool</span> | Boolean |1 byte | false | true |
+| character | <span style="color: var(--highlight)">char</span> | Character | 2 bytes | \u0000 (or 0) | \uffff (or 65 535) |
+
+Those are the basic primary data types which you will mostly use in your code.
+
+Apart from the boolean, all of the otehr data types are numbers. Even char, it just references the unicode sheet as I mentionned before, but at the end of the day, it is a number which your computer simply translates from a letter (you can even declare you char as numbers, which your computer will translate, like so : char a = 92;).
+The only difference between all of those binary declarations are 
+1. if there is a floating point (yes to all, except for integer, boolean, char)
+2. what is the low and high bound
+
+knowing point #1 is the most important, point #2 is mostly for memory optimization, which you do not particularly need to think about at the moment since java automatically allocates (gives memory to data) and deprecates (marks the memory as 'free to use' when you are finished with it) memory.
+
+
+<br>
+
+#### <a id="console-print"><span style="color: var(--title)">02.01 OPERATIONS AND FLOATING POINTS</span></a>
+________________
+
+<br>
+
+
+
+
+
 
 </span>
