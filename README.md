@@ -1,6 +1,6 @@
 # JAVA_MANS
 
-This is a manual on how to program in Java, from the base concepts like datatypes and objects to more advanced like design patterns, streams, ect. 
+This is a manual on how to program in Java, from the base concepts like datatypes and objects to more advanced like design patterns, streams, ect.
 This is not an official manual, it comes from my understanding, experience, and research as a programmer and student myself.
 
 ## HOW TO
@@ -42,5 +42,6 @@ I reccomend :
 * <a href="https://www.codecademy.com/">CodeCademy</a>
 
 If none of these work and you are really stuck, you can always create an issue on this repository with the question and I will try to answer it directly.
+
 
 

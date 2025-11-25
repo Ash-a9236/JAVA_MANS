@@ -3,11 +3,18 @@
 <!--VARIABLES-->
 
 <style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Fira+Code&display=swap');
+
   :root {
     --text: #F7E0CD;
     --title: #708C69;
     --highlight: #D69992;
     --link: #B15A43;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   }
 </style>
 
@@ -26,14 +33,14 @@ TABLE OF CONTENTS <br> <br>
     &emsp; [<span style="color: var(--link)">01 . . Types of coding</span>](#coding-types-types) <br>
     &emsp; [<span style="color: var(--link)">02 . . High and Low</span>](#coding-types-high-and-low) <br>
     &emsp; [<span style="color: var(--link)">03 . . Quirks</span>](#coding-types-quirks) <br>
-[<span style="color: var(--link)">05 . . Number Systems</span>](#number-systems) <br> 
+[<span style="color: var(--link)">05 . . Number Systems</span>](#number-systems) <br>
     &emsp; [<span style="color: var(--link)">01 . . Computer Memory</span>](#number-systems-computer-memory) <br>
     &emsp; [<span style="color: var(--link)">02 . . Binary</span>](#number-systems-binary) <br>
     &emsp; [<span style="color: var(--link)">03 . . Other Systems</span>](#number-systems-other-systems) <br>
-[<span style="color: var(--link)">06 . . Operations</span>](#operations) <br> 
+[<span style="color: var(--link)">06 . . Operations</span>](#operations) <br>
     &emsp; [<span style="color: var(--link)">01 . . Arithmetic</span>](#operations-arithmetic) <br>
     &emsp; [<span style="color: var(--link)">02 . . Logic Gates</span>](#operations-logic-gates) <br>
-[<span style="color: var(--link)">07 . . Us</span>](#us) <br> 
+[<span style="color: var(--link)">07 . . Us</span>](#us) <br>
 [<span style="color: var(--link)">08 . . Data Types & NULL</span>](#data-types) <br>
   &emsp; [<span style="color: var(--link)">01 . . Primitive</span>](#data-types-primitive) <br>
   &emsp; [<span style="color: var(--link)">02 . . Non-Primitive</span>](#data-types-non-primitive) <br>
@@ -46,7 +53,7 @@ ________
 ________________
 
 <br>
-Coding is simply <span style="color: var(--highlight)">translating</span> what you want to say in human-english to a computer-understandable language. It is putting abstact concepts like cats and bananas and making your computer make them do 'stuff', which is basically whatever you want. 
+Coding is simply <span style="color: var(--highlight)">translating</span> what you want to say in human-english to a computer-understandable language. It is putting abstact concepts like cats and bananas and making your computer make them do 'stuff', which is basically whatever you want.
 
 <br>
 
@@ -66,7 +73,7 @@ ________
 ________________
 
 <br>
-In programming, each language has its set of standards, especially for naming. <br> 
+In programming, each language has its set of standards, especially for naming. <br>
 In Java (and most other OOP languages) the standards are : <br> <br>
 
 * <span style="color: var(--highlight)">Variables are in camel case</span> : the first word is never capitalized, all words are together, and every first letter of every word is capitalized (i.e. camelCase, num3, tryNum, fName, thisIsASentenceInCamelCase, etc.) <br> <br>
@@ -74,9 +81,9 @@ In Java (and most other OOP languages) the standards are : <br> <br>
 * <span style="color: var(--highlight)">Constants and Enums are always named in all caps</span> : TRYCOUNT, PI, NUMBER, E, etc. <br> <br>
 * <span style="color: var(--highlight)">Method naming should be simple</span> and straight to the point : nameFormatting instead of willFormatAStringToCapitalizeTheFirstLetterOfEveryWord <br> <br>
 * <span style="color: var(--highlight)">Methods and classes should always think of the 'blackbox'</span> : hide code from each other <br> <br>
-* <span style="color: var(--highlight)">Methods should never be more than 50 lines of code</span> <br><br>
+* <span style="color: var(--highlight)">Methods shouldn't be more than 50 lines of code</span> <br><br>
 * <span style="color: var(--highlight)">Avoid redundant code at all cost</span> : When a piece of code is reused more than 3 times throughout your code, create a method and call it.  <br> <br>
-* <span style="color: var(--highlight)">Avoid unecessary spaces in the code</span> (i.e. extra lines) <br> <br>
+* <span style="color: var(--highlight)">Avoid unecessary spaces in the code</span> (i.e. 5 empty lines between 2 functions) <br> <br>
 * <span style="color: var(--highlight)">Classes should always be organized</span> : data fields, constructors, helper methods, equals and hashcode, getters and setters <br> <br>
 * <span style="color: var(--highlight)">Every method should have its documentation</span>
 
@@ -208,7 +215,7 @@ For example, HTML and CSS (for webpages) are scripting languages. Bash (in your 
 
 <br>
 
-Bash scripting (you can copy-paste it line by line in your terminal as well!): 
+Bash scripting (you can copy-paste it line by line in your terminal as well!):
 
 ```console
 echo hello
@@ -225,7 +232,7 @@ I cannot go back to line 1
 Process finished with exit code 0
 ```
 
-<br> 
+<br>
 
 #### <a id="coding-types-high-and-low"><span style="color: var(--title)">04.02 HIGH & LOW</span></a>
 ________________
@@ -233,7 +240,7 @@ ________________
 <br>
 
 You can also differenciate programming languages with how close they are to english vs how close they are to machine language.
-The <span style="color: var(--highlight)">closer to the machine the lower their level of abstraction is</span>. Basically, the lower they are, the more you need to understand how the machine works, and the more you will need to declare everything for your computer. 
+The <span style="color: var(--highlight)">closer to the machine the lower their level of abstraction is</span>. Basically, the lower they are, the more you need to understand how the machine works, and the more you will need to declare everything for your computer.
 The lowest programming language (apart from binary) is called Assembly. It was the first programming language and is one-to-one with binary, hence why it is so low.
 
 When we are talking about high level programming languages, we mean languages that are almost like written english. They might seem more intuitive but be mindful that they hide *a lot*, which we call 'abstraction'.
@@ -277,10 +284,10 @@ ________________
 
 <br>
 
-All programming languages have 'quirks' that you need to be aware of. In Java, you must note (principally) that 
+All programming languages have 'quirks' that you need to be aware of. In Java, you must note (principally) that
 
 * It is <span style="color: var(--highlight)">case sensitive</span> : hello and HELLO are not the same, int a = 2; and int A  = 2; are not the same
-* You need to <span style="color: var(--highlight)">define the type of variable</span> : Java does not have an interpreter, therefore it cannot 'guess' or 'assume' the type of a variable
+* You need to <span style="color: var(--highlight)">define the type of variable</span> : Java is a strongly typed language, therefore it cannot 'guess' or 'assume' the type of a variable
 * You need to <span style="color: var(--highlight)">define the access modifiers</span> for the methods : public, private, protected, default
 * <span style="color: var(--highlight)">Automatic garbage collection</span> : you do not need to worry about the discarded objects and variables
 * <span style="color: var(--highlight)">NullPointerException</span> : is an exception that you will see a lot and will have to debug a lot. Java is not able to handle null pointers and therefore exits if the null is not manually handled
@@ -301,7 +308,7 @@ ________________
 
 <br>
 
-In programming (and other computer-related fields), you will come accross different <span style="color: var(--highlight)">number systems</span>. While they are confusing at first, they do have a purpose : make it easier to read, write, and undestand binary code. 
+In programming (and other computer-related fields), you will come accross different <span style="color: var(--highlight)">number systems</span>. While they are confusing at first, they do have a purpose : make it easier to read, write, and undestand binary code.
 They are basically shortcuts to make binary calculation, which makes it easier for a human to translate a random number, value, or even idea into something the computer can understand.
 
 <br>
@@ -312,7 +319,7 @@ ________________
 
 <br>
 
-Your computer has two memories : the <span style="color: var(--highlight)">RAM</span> (Rapid / Random Access Memory) and the <span style="color: var(--highlight)">SSD</span> (Solid State Drive). The SSD is like a giant library that contains everything from your operating system (OS like Windows, Mac, Linux, Adroid, ect.) to your word documents or even this file. 
+Your computer has two memories : the <span style="color: var(--highlight)">RAM</span> (Rapid / Random Access Memory) and the <span style="color: var(--highlight)">SSD</span> (Solid State Drive). The SSD is like a giant library that contains everything from your operating system (OS like Windows, Mac, Linux, Adroid, ect.) to your word documents or even this file.
 <br> The RAM is like a cart beside the librarian's desk where all the books you are using at the moments are stored. The RAM makes it easier and faster to access them.
 <br> When you are programming, you are only using the RAM. All the variables, objects and the program itself will run on the RAM.
 
@@ -398,7 +405,7 @@ ______________
 
 through programming we use different numbering system to be able to communicate more effectively with a computer (after all, computers think in binary, not in decimals)
 
-The one that is the most used in other field is the HEXADECIMAL system, for mostly colours. 
+The one that is the most used in other field is the HEXADECIMAL system, for mostly colours.
 
 
 | NAME | BASE | REFERENCE | DIGITS | EXAMPLE |
@@ -436,7 +443,7 @@ when the compiler does operations, it will make descisions on what to evaluate f
 
 To prioritize or clarify an equation (for you and the computer), you can add parenthesis, but make sure they are not becomming redundant.
 
-Computers usually evaluate : 
+Computers usually evaluate :
 
 1. Parenthesis
 2. Multiplication / Division / Remainder (Mod)
@@ -450,7 +457,7 @@ Computers usually evaluate :
 | **Addition**         |       +  | a + b   |   |   |   |  **x = x + a**      |       += | x += a  |
 | **Substraction**     |       -  | a - b   |   |   |   |  **x = x - a**      |       -= | x -= a  |
 | **Multiplication**   |       *  | a * b   |   |   |   |  **x = x * a**      |       *= | x *= a  |
-| **Division**         |       /  | a / b   |   |   |   |  **x = x / a**      |       /= | x /= a  | 
+| **Division**         |       /  | a / b   |   |   |   |  **x = x / a**      |       /= | x /= a  |
 | **Remainder (mod)**  |       %  | a % b   |   |   |   |  **x = x % a**      |       %= | x %= a  |
 |                      |          |         |   |   |   |                     |          |         |
 |                      |          |         |   |   |   |                     |          |         |
@@ -462,7 +469,7 @@ Computers usually evaluate :
 
 
 
-<br> 
+<br>
 
 #### <a id="operations-logic-gates"><span style="color: var(--title)">06.02 LOGIC GATES</span></a>
 ________________
@@ -479,7 +486,7 @@ There are many different logic gates but the most common ones are the <span styl
 |-------|----------|----------|
 | AND   |    &&    |  a && b  |
 | OR    |   \|\|   | a \|\| b |
-| NOT   |     !    |  a ! b   | 
+| NOT   |     !    |  a ! b   |
 
 Each gate represents a rule that the computer can follow. It is one of the most basic operation in computation.
 
@@ -531,14 +538,14 @@ public class Main {
 
         if (num1 < num2 || num2 > num3) { //this reads as 'if num1 is smaller than num2 OR, if num2 is bigger than num3
             System.out.print("TRUE!");
-        } else { //if the 'if' conditions are false, then to this : 
+        } else { //if the 'if' conditions are false, then to this :
             System.out.print("FALSE!");
         }
     }
 }
 ```
 
-In this example, the compiler will be able to skip reading the condition 'num2 > num3' since : 
+In this example, the compiler will be able to skip reading the condition 'num2 > num3' since :
 1. an OR gate only needs one of the statements A and B to be true
 2. the statement A (num1 < num2) is already true
 
@@ -552,8 +559,8 @@ ________________
 
 <br>
 
-After all of this information, we should start coding a bit! 
-<br> First and foremost you will need to <a href="https://www.oracle.com/java/technologies/downloads/#jdk24-windows"><span style="color: var(--link)">install Java on your computer</a></span>. 
+After all of this information, we should start coding a bit!
+<br> First and foremost you will need to <a href="https://www.oracle.com/java/technologies/downloads/#jdk24-windows"><span style="color: var(--link)">install Java on your computer</a></span>.
 
 > <span style="color: var(--highlight)">please NEVER EVER EVER install anything if its not from an official source (the actual developpers) and without verifying the installation through the provided key. All installation instructions are in the documentation provided by the developper. FOLLOW THEM. <br> If you run into a problem, if your computer crashes, if you are unsure of the source, etc., trying to undo those installations is long and hard and sometimes near impossible without having to wipe the entirety of your computer. <br> Make sure you know what you are doing before doing. (trust me on this one. Trust the fact that you should trust no one except those who are legally bounded to give you this trust).</span>
 
@@ -574,7 +581,7 @@ As a reference, you should always have those settings :
 
 ![image info](/Images/00_INTRODUCTION_00_createAProjectSettings.png)
 
-<!-- 
+<!--
 IF THE FIRST IMAGE DOESNT LOAD : UNCOMMENT THIS
 <img src="/Images/00_INTRODUCTION_00_createAProjectSettings.png" alt="creating a new project settings"/>
 -->
@@ -591,7 +598,7 @@ ________________
 
 variables can be different <span style="color: var(--highlight)">data types</span>, which we define, to tell the computer what 'stuff' something is. Some languages (like JavaScript, Python, Ruby, ect.) do not necessitate explicit data type definition. They are called <span style="color: var(--highlight)">dynamically typed</span> (or untyped) languages. Java is **not** one of those languages. You will need to specify everything from start to finish. For example, if we want to define a simple integer (number), like 4, the compilier doesn't know what '4' is, therefore, we add <span style="color: var(--highlight)">int</span> in front of it, thus defining 4 for the computer
 
-Java, like every programming language can do automatic conversions, which is when you force (cast) a type uppon a variable of another type. Conversions towards higher values can work while conversions towards lower values are not recommended since information will be lost or the system will crash. For example, you can convert an integer (4) to a double (4.0) without a problem. The compiler will simply add the decimal point. But, converting the double (4.5) to the integer (4), Java will not do a rounding. It will simply remove the decimal point. 
+Java, like every programming language can do automatic conversions, which is when you force (cast) a type uppon a variable of another type. Conversions towards higher values can work while conversions towards lower values are not recommended since information will be lost or the system will crash. For example, you can convert an integer (4) to a double (4.0) without a problem. The compiler will simply add the decimal point. But, converting the double (4.5) to the integer (4), Java will not do a rounding. It will simply remove the decimal point.
 
 > For the type casting reference in Java see  <a href="https://storage.googleapis.com/www.examclouds.com/primitives/widening-conversions.png"><span style="color: var(--link)">**AUTOMATIC CONVERSION IN JAVA**</a></span>
 
@@ -606,7 +613,7 @@ primitive data types are data that is <span style="color: var(--highlight)">dire
 
 It is important to know the basic minimum and maximum value for your datatypes for specific cases. For example, doing a calculator with only ints will make you run into problems if you try to input numbers that will add to one higher than the maximum value. Another example would be trying to store phone numbers in ints (which will definitly not work : trust me we all tried).
 
-| NAME | SYMBOL | WRAPPER CLASS | SIZE | MIN VALUE | MAX VALUE | 
+| NAME | SYMBOL | WRAPPER CLASS | SIZE | MIN VALUE | MAX VALUE |
 |------|--------|---------------|------|-----------|-----------|
 | integer | <span style="color: var(--highlight)">int</span> | Integer | 4 bytes | -2 147 483 648 | 2 147 483 647 |
 | double | <span style="color: var(--highlight)">double</span> | Double | 8 bytes | -1.79769313486232 e 308 | 1.79769313486232 e 308 |
@@ -641,7 +648,7 @@ public class Main {
 ---------------------
 <br>
 
-In programming languages, non-primitive data types are data types which are actually <span style="color: var(--highlight)">classes</span>. Non-primitive data types are <span style="color: var(--highlight)">not directly referenced</span> in the memory, but the computer rather holds the <span style="color: var(--highlight)">memory address</span> of the class. 
+In programming languages, non-primitive data types are data types which are actually <span style="color: var(--highlight)">classes</span>. Non-primitive data types are <span style="color: var(--highlight)">not directly referenced</span> in the memory, but the computer rather holds the <span style="color: var(--highlight)">memory address</span> of the class.
 In Java the only non-primitive data type (for now) is the <span style="color: var(--highlight)">String</span>. It is easier to see it in java as it is written with a capitalized s (String), therefore defining it as a class
 
 -> the string is a sequence of characters
@@ -660,11 +667,11 @@ public class Main {
     }
 
     //method
-    public void printName (String name) { 
+    public void printName (String name) {
         System.out.println(name); //will print the memory address, not the value
 
         name.toString(); //will print the value of the string : John Doe
-    }  
+    }
 }
 ```
 
@@ -674,9 +681,9 @@ public class Main {
 ---------------------
 <br>
 
-In programming, you will see a lot of 'NULL' and NULL handling. 
+In programming, you will see a lot of 'NULL' and NULL handling.
 The null is a pointer in the memory which is the holder value for 'nothing'. It does not hold a value and rather carries the pointer towards a specific memory address which the compiler knows as null.
-Be careful : 
+Be careful :
 <br> &emsp; - NULL can only be assigned to reference-type data types, or non-primitive data types
 <br> &emsp; - NULL doesn't mean 'empty' or 'zero' (String = null; is not equal to String = "";)
 <br> &emsp; - Checking for null is always recommended to avoid the null pointer exceptions

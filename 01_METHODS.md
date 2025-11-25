@@ -3,11 +3,18 @@
 <!--VARIABLES-->
 
 <style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Fira+Code&display=swap');
+
   :root {
     --text: #F7E0CD;
     --title: #708C69;
     --highlight: #D69992;
     --link: #B15A43;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   }
 </style>
 
@@ -28,8 +35,8 @@ TABLE OF CONTENTS <br> <br>
     &emsp; [<span style="color: var(--link)">04 . . Console Errors</span>](#console-errors) <br>
 [<span style="color: var(--link)">03 . . Access Modifiers</span>](#access-modifiers) <br>
 [<span style="color: var(--link)">04 . . Static vs Non-Static</span>](#static-vs-nonstatic) <br>
-[<span style="color: var(--link)">05 . . Return Types</span>](#return-types) <br> 
-[<span style="color: var(--link)">06 . . Naming</span>](#naming) <br> 
+[<span style="color: var(--link)">05 . . Return Types</span>](#return-types) <br>
+[<span style="color: var(--link)">06 . . Naming</span>](#naming) <br>
 [<span style="color: var(--link)">07 . . Input</span>](#input) <br>
 [<span style="color: var(--link)">08 . . Documentation</span>](#documentation) <br>
 
@@ -56,13 +63,13 @@ public class Main {
     public static void main (String[] args) {
         makeSound();
         addNums(5, 7); //same class method call
-	System.out.println(addNums(5, 7)); //calling the method again but printing the result this time
+	    System.out.println(addNums(5, 7)); //calling the method again but printing the result this time
 
         String name = "hello";
-	System.out.println(name);
+	    System.out.println(name);
         name.toUpperCase(); //calling the toUpperCase method
         //name = "HELLO" now
-	System.out.println(name);
+	    System.out.println(name);
     }
 
     public static void makeSound () {
@@ -156,19 +163,19 @@ ________________
 
 <br>
 
-In my previous examples you might have seen this : 
+In my previous examples you might have seen this :
 
 ```java
 package asha9236.example;
 
 public class Main {
     public static void main (String[] args) {
-    
+
     }
 }
 ```
 
-This is called the <span style="color: var(--highlight)">main</span> class and method. For now, you do not need to worry about the class, but the method is what we are looking for. 
+This is called the <span style="color: var(--highlight)">main</span> class and method. For now, you do not need to worry about the class, but the method is what we are looking for.
 
 A Java program cannot run without a main method since it is the entry point of the program. You can see the entire program as a list of steps to do, and the main method would be step 0. You can add a main method to any class, but know that if you delete the main class, you need to define which is the entry point.
 
@@ -185,7 +192,7 @@ ________________
 
 The terminal or console is the origin of what computers where before GUI (Graphical User Interface). They are called CLI (Command Line Interface) because to interact with them you need to write commands.
 
-When you compile and run the code, a new window will open either in the IDE's built-in terminal, or in your computer's terminal itself. The console will contain the output of the code as a process exit. 
+When you compile and run the code, a new window will open either in the IDE's built-in terminal, or in your computer's terminal itself. The console will contain the output of the code as a process exit.
 
 You can print on the console as we have done it with <span style="color: var(--highlight)">System.out.println();</span> (System Class -> Output field -> Print + new line method), or write the shortcut <span style="color: var(--highlight)">sout + tab</span>.
 
@@ -200,8 +207,8 @@ Printing on the console has different means, most of the time, it is to print va
 
 It might seem useless at first, but printing will make abstract calculations a bit more easy to understand, especially when debugging.
 
-You can print with different methods in Java : 
-* <span style="color: var(--highlight)">System.out.println();</span> - sout : base printing with a new line added 
+You can print with different methods in Java :
+* <span style="color: var(--highlight)">System.out.println();</span> - sout : base printing with a new line added
 * <span style="color: var(--highlight)">System.out.print();</span> - none : the base printing, no new line
 * <span style="color: var(--highlight)">System.out.printf();</span> - souf : format printing
 
@@ -316,7 +323,7 @@ public class Main {
         Scanner console = new Scanner(System.in); //creating the scanner with the name 'console' & telling it to look at the console through 'System.in'
 
         System.out.println("Hello !");
-        System.out.print("Please input your name => "); 
+        System.out.print("Please input your name => ");
         String name = console.nextLine(); //will never go further than here until something is inputted though the console
         System.out.printf("Hello %s! ", name);
     }
@@ -325,11 +332,11 @@ public class Main {
 
 ```
 
-Console until line 11 : 
+Console until line 11 :
 
 ```Console
 Hello !
-Please input your name => 
+Please input your name =>
 ```
 
 Console after input :
@@ -337,13 +344,13 @@ Console after input :
 ```Console
 Hello !
 Please input your name => ash-a9236
-Hello ash-a9236! 
+Hello ash-a9236!
 
 Process finished with exit code 0
 ```
 
 The <span style="color: var(--highlight)">Scanner class</span> has multiple methods that can be used to get multiple types of input.
-They include : 
+They include :
 
 | METHOD        | INPUT REQUIRED |
 | --------------| ---------------|
@@ -353,7 +360,7 @@ They include :
 | .nextDouble() | double |
 | .nextFloat()  | float |
 
-BUT! Be careful : if you request an int through .nextInt() and you try to pass a String it will return an error and exit the code completly : 
+BUT! Be careful : if you request an int through .nextInt() and you try to pass a String it will return an error and exit the code completly :
 
 ```java
 package asha9236.example;
@@ -399,15 +406,15 @@ As you could see in the last example, when something goes wrong with your code d
 
 Console errors are informations about how, where and why the error happen.
 
-<span style="color: var(--highlight)">Exception</span> are the way that your IDE shows you an error. They show : 
+<span style="color: var(--highlight)">Exception</span> are the way that your IDE shows you an error. They show :
 * the <span style="color: var(--highlight)">type</span> of error
 * <span style="color: var(--highlight)">where</span> the error happen
-and sometimes 
+and sometimes
 * <span style="color: var(--highlight)">how to fix it</span>
 
 This allows you to debug your code more efficiently, as long as you read the exception correctly.
 
-In last example, the error was : 
+In last example, the error was :
 
 ```Console
 Exception in thread "main" java.util.InputMismatchException
@@ -425,7 +432,7 @@ In this, the IDE tells you :
 2. it happened at the <span style="color: var(--highlight)">line 11</span> of the main method in the Main class : all the line at first don't matter, only the last line with your groupId (in my case asha9236), matters because up until then it is not your code but rather the code that makes Java. The way to recognize it is if it starts with java.[something...].[the class you are using], which in our case is 'java.base./java.util.Scanner'
 3. The <span style="color: var(--highlight)">process exit</span>, which indicated <span style="color: var(--highlight)">1</span>, AKA, an <span style="color: var(--highlight)">expected potential error</span>
 
-The <span style="color: var(--highlight)">process exit</span> has 3 main values : 
+The <span style="color: var(--highlight)">process exit</span> has 3 main values :
 
 | VALUE | MEANING |
 |-------|---------|
@@ -437,7 +444,7 @@ The <span style="color: var(--highlight)">process exit</span> has 3 main values 
 
 Sometimes, there is an error but the IDE <span style="color: var(--highlight)">doesn't catch it</span>. Those are called <span style="color: var(--highlight)">logical errors</span> and cannot be caught unless you manually go through your code. An example of this would be doing 2+2 and expecting 4, but the IDE gives you back 22 : there is no error for the IDE but clearly one in the logic.
 
-Basically, there are 3 types of errors : 
+Basically, there are 3 types of errors :
 
 | TYPE      | ERROR |
 |-----------|-------|
@@ -456,7 +463,7 @@ ________________
 
 As you might have caught in code examples before, the keyword 'public' appears quite often in <span style="color: var(--highlight)">method definitions (headers)</span>. <span style="color: var(--highlight)">public</span> is an <span style="color: var(--highlight)">access modifier</span>, which allows everyone to see what is inside the method.
 
-<span style="color: var(--highlight)">Access modifiers</span> are keywords which determine <span style="color: var(--highlight)">who</span> can 'see' and 'use' the method. 
+<span style="color: var(--highlight)">Access modifiers</span> are keywords which determine <span style="color: var(--highlight)">who</span> can 'see' and 'use' the method.
 
 The best way to write your code is to give as little access as necessary (to enfore the black box). Basically, if a method doesn't need to be public, make it protected. If it doesn't need to be protected, make it private.
 
@@ -469,7 +476,7 @@ The best way to write your code is to give as little access as necessary (to enf
 
 <br>
 
-Access modifiers can be seen by : 
+Access modifiers can be seen by :
 
 | MODIFIER  | UML SIGN | SAME CLASS | PACKAGE SUBCLASS | PACKAGE NON-SUBCLASS | DIFF PACK SUBCLASS | DIFF PACK NON-SUBCLASS |
 |-----------|----------|------------|------------------|----------------------|--------------------|------------------------|
@@ -530,13 +537,13 @@ public class Main {
 		System.out.println("Bing!");
 		return; //not necessary but can be used for clarity
 	}
-	
+
 	public int addNums (int a, int b) { //return type : int
 		int c = a + b;
 		return c; //matches return data type (int)
 		//we could also simplify the method by simply writing 'return a + b;' because it still returns an int
 	}
-	
+
 	public static String printName (String firstName, String lastName) { //return type : String
 		String fullName = firstName.substring(0, 1).toUpperCase() + firstName.substring(1).toLowerCase(); //capitalize the first letter and then lowercase the rest of the name
 		fullName += " " + lastName.substring(0, 1).toUpperCase() + lastName.substring(1).toLowerCase(); //adding the last name with the first letter capitalized
@@ -544,7 +551,7 @@ public class Main {
 
 		/* ANOTHER WAY TO WRITE THIS METHOD
 		firstName += firstName.substring(0, 1).toUpperCase() + firstName.substring(1).toLowerCase();
-		fullName += lastName.substring(0, 1).toUpperCase() + lastName.substring(1).toLowerCase(); 
+		fullName += lastName.substring(0, 1).toUpperCase() + lastName.substring(1).toLowerCase();
 		return firstName + " " + lastName;
 		*/
 	}
@@ -562,7 +569,7 @@ ________________
 
 As you might have noticed, in programming we love to have very direct and no-brainers names for everything. This goes for every programming language, concept or even when you, the programmer, name your methods or variables.
 
-In java, all the naming is done in <span style="color: var(--highlight)">camel case</span>, which means that : 
+In java, all the naming is done in <span style="color: var(--highlight)">camel case</span>, which means that :
 * the first word is all in lower case
 * all the following words have their first letter capitalized
 * no space between the words
@@ -591,9 +598,9 @@ Furthermore, when you name a method or a variable, it should be as straight to t
 | firstName                         | theFirstNameOfMainUser            |
 
 
-Bonus : 
+Bonus :
 
-There are other naming conventions such as : 
+There are other naming conventions such as :
 * <span style="color: var(--highlight)">pascal</span> case, which is basically camel case but the first word is also capitalized (ThisIsPascalCase, thisIsCamelCase)
 * <span style="color: var(--highlight)">kebab</span> case, where you use a hyphen to separate the words (this-is-kebab-case)
 * <span style="color: var(--highlight)">snake</span> case, where you use an underscore instead of a hyphen (this_is_snake_case, this_is_not_kebab_case)
@@ -612,7 +619,7 @@ ________________
 
 In essence, methods are like the functions you might have seen in basic algebra. You 'input x' and get y as an output of the function. For us, the ys are the returns, and the xs are the method inputs.
 
-The input of your method are located in the parenthesis section of the header. They need to be formatted this way : 
+The input of your method are located in the parenthesis section of the header. They need to be formatted this way :
 * input type (int, double, String, int[], etc.)
 * input name (fName, age, tryCount, etc.)
 
@@ -627,14 +634,14 @@ public class Main {
 
         int num = 4;
         int secondNum = 7;
-        
+
         addNums(num, secondNum, num);
 	}
 
 	public static int addNums (int num1, int num2, int num3) {
 		return num1 + num2 + num3; //15
 	}
-	
+
 }
 ```
 
@@ -692,7 +699,7 @@ public class Main {
      * changes the name of the logged-in user
      * @param console the sytsem console
      */
-    public void settingsChangeName (Console console) { 
+    public void settingsChangeName (Console console) {
         clearScreenSequence(console);
         appHeader();
         System.out.println(messages.getString("prompt.newName"));
